@@ -1,0 +1,1010 @@
+[
+  {
+    "slug": "transformation-5-leviers-valeur",
+    "title": "Transformation : les 5 leviers qui créent vraiment de la valeur",
+    "category": "Transformation",
+    "excerpt": "Aligner vision, organisation et exécution pour des résultats durables.",
+    "date": "2026-05-20",
+    "read_time": "6 min",
+    "type": "insight",
+    "priority": 500,
+    "featured": true,
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "image": "/assets/img/articles/transformation-5-leviers-valeur.svg",
+    "seo_title": "Transformation : les 5 leviers qui créent vraiment de la valeur — Cédrick Benittah",
+    "seo_description": "Aligner vision, organisation et exécution pour des résultats durables.",
+    "content": "Une transformation ne réussit pas parce qu’un plan existe. Elle réussit lorsque la vision est comprise, les priorités sont assumées et l’exécution est pilotée avec exigence.\n\nLes cinq leviers essentiels sont le cap stratégique, la gouvernance, l’engagement des équipes, la capacité d’exécution et la mesure de l’impact.\n\nDans les grands groupes, le sujet n’est pas seulement de décider. Il faut embarquer des acteurs multiples, rendre les arbitrages lisibles et transformer les pratiques au quotidien.\n\nLa valeur vient de l’alignement entre stratégie, organisation, leadership et performance mesurable.\n\n## À retenir\n\nLa transformation, l’IA ou la performance ne produisent de résultats que lorsqu’elles sont reliées à une intention claire, une méthode adaptée et une dynamique humaine solide.\n\nÉchanger sur vos enjeux →",
+    "pillar": "Transformation & Performance",
+    "geo_intent": "expertise",
+    "keywords": [
+      "transformation",
+      "IA",
+      "performance",
+      "leadership",
+      "agilité",
+      "DevOps",
+      "adoption IA"
+    ],
+    "takeaways": [
+      "Une transformation réussie commence par un diagnostic clair des irritants et des priorités.",
+      "La valeur apparaît lorsque stratégie, gouvernance et exécution sont alignées.",
+      "L’impact durable dépend de l’adhésion des équipes et de la capacité à ancrer les changements."
+    ],
+    "cta": {
+      "title": "Votre transformation a besoin d’un cadrage clair et actionnable ?",
+      "text": "Clarifions vos priorités, vos irritants terrain et vos leviers de transformation pour construire une feuille de route utile et adoptée.",
+      "label": "Demander un diagnostic",
+      "url": "/diagnostic-adoption-ia-transformation/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "ia-act-organisations-anticiper",
+    "title": "IA Act : ce que les organisations doivent anticiper",
+    "category": "IA & Data",
+    "excerpt": "Sensibiliser les équipes, cadrer les usages et instaurer une gouvernance responsable.",
+    "date": "2026-03-15",
+    "read_time": "6 min",
+    "type": "insight",
+    "priority": 100,
+    "featured": true,
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "image": "/assets/img/articles/ia-act-organisations-anticiper.svg",
+    "seo_title": "IA Act : ce que les organisations doivent anticiper — Cédrick Benittah",
+    "seo_description": "Sensibiliser les équipes, cadrer les usages et instaurer une gouvernance responsable.",
+    "content": "L’IA Act impose aux organisations de mieux qualifier leurs usages, leurs responsabilités et leurs risques. Mais le sujet n’est pas seulement réglementaire.\n\nUne bonne approche consiste à sensibiliser les équipes, documenter les usages, clarifier les responsabilités et instaurer des principes de gouvernance.\n\nLes directions métiers, DSI, DRH, juridique, conformité et data doivent travailler ensemble pour éviter les zones grises.\n\nL’objectif n’est pas de freiner l’innovation, mais de créer une adoption responsable et durable.\n\n## À retenir\n\nLa transformation, l’IA ou la performance ne produisent de résultats que lorsqu’elles sont reliées à une intention claire, une méthode adaptée et une dynamique humaine solide.\n\nÉchanger sur vos enjeux →",
+    "pillar": "IA & Adoption",
+    "geo_intent": "expertise",
+    "keywords": [
+      "adoption IA",
+      "diagnostic IA",
+      "cas d’usage IA",
+      "IA Act",
+      "gouvernance IA",
+      "transformation IA"
+    ],
+    "takeaways": [
+      "L’IA crée de la valeur lorsqu’elle part d’un irritant métier réel, pas d’un effet de mode.",
+      "Les cas d’usage doivent être priorisés selon leur valeur, leur faisabilité et leurs risques.",
+      "L’adoption durable suppose un cadre clair, des managers alignés et une feuille de route concrète."
+    ],
+    "cta": {
+      "title": "Vous souhaitez passer de l’expérimentation IA à une feuille de route concrète ?",
+      "text": "Le Diagnostic Adoption IA & Transformation permet d’identifier les cas d’usage utiles, de clarifier les risques et de prioriser les actions 30 / 60 / 90 jours.",
+      "label": "Découvrir le diagnostic IA",
+      "url": "/diagnostic-adoption-ia-transformation/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "ia-generative-passer-experimentation-impact",
+    "title": "IA générative : passer de l’expérimentation à l’impact",
+    "category": "IA & Data",
+    "excerpt": "Comment transformer les usages IA en résultats mesurables et durables pour votre organisation.",
+    "date": "2026-04-22",
+    "read_time": "6 min",
+    "type": "insight",
+    "priority": 480,
+    "featured": true,
+    "image": "/assets/img/articles/ia-generative-passer-experimentation-impact.svg",
+    "seo_title": "IA générative : passer de l’expérimentation à l’impact — Cedrick Benittah",
+    "seo_description": "Comment transformer les usages IA en résultats mesurables et durables pour votre organisation.",
+    "content": "## Sortir de l’effet vitrine\n\nComment transformer les usages IA en résultats mesurables et durables pour votre organisation. L’enjeu n’est plus de prouver que l’IA impressionne. L’enjeu est de démontrer qu’elle aide réellement les métiers à gagner du temps, mieux décider, mieux servir et mieux apprendre.\n\nBeaucoup d’organisations restent bloquées dans une phase d’expérimentation dispersée : quelques prompts, des démonstrations spectaculaires, mais peu de transformation opérationnelle. Pour passer à l’impact, il faut cadrer, prioriser et mesurer.\n\n## Trois questions à poser avant de déployer\n\n- Quel problème métier voulons-nous résoudre ?\n- Quel niveau de risque acceptons-nous, notamment sur les données, la conformité et l’IA Act ?\n- Quel indicateur permettra de vérifier que l’usage crée réellement de la valeur ?\n\n## Les leviers à activer\n\nUne adoption IA efficace combine acculturation, gouvernance légère, cas d’usage concrets et accompagnement du changement. Les équipes doivent comprendre ce qu’elles peuvent faire, ce qu’elles ne doivent pas faire, et comment transformer l’outil en avantage opérationnel.\n\n## Ma conviction\n\nL’IA devient stratégique lorsqu’elle améliore une décision, un processus ou une expérience. Elle doit rester au service de l’humain, de la performance et de la responsabilité.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "IA & Adoption",
+    "geo_intent": "expertise",
+    "keywords": [
+      "adoption IA",
+      "diagnostic IA",
+      "cas d’usage IA",
+      "IA Act",
+      "gouvernance IA",
+      "transformation IA"
+    ],
+    "takeaways": [
+      "L’IA crée de la valeur lorsqu’elle part d’un irritant métier réel, pas d’un effet de mode.",
+      "Les cas d’usage doivent être priorisés selon leur valeur, leur faisabilité et leurs risques.",
+      "L’adoption durable suppose un cadre clair, des managers alignés et une feuille de route concrète."
+    ],
+    "cta": {
+      "title": "Vous souhaitez passer de l’expérimentation IA à une feuille de route concrète ?",
+      "text": "Le Diagnostic Adoption IA & Transformation permet d’identifier les cas d’usage utiles, de clarifier les risques et de prioriser les actions 30 / 60 / 90 jours.",
+      "label": "Découvrir le diagnostic IA",
+      "url": "/diagnostic-adoption-ia-transformation/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "conduire-changement-dans-duree",
+    "title": "Conduire le changement dans la durée",
+    "category": "Transformation",
+    "excerpt": "Les clés pour embarquer vos équipes et ancrer la transformation dans le quotidien.",
+    "date": "2026-04-15",
+    "read_time": "7 min",
+    "type": "insight",
+    "priority": 98,
+    "featured": true,
+    "image": "/assets/img/articles/conduire-changement-dans-duree.svg",
+    "seo_title": "Conduire le changement dans la durée — Cedrick Benittah",
+    "seo_description": "Les clés pour embarquer vos équipes et ancrer la transformation dans le quotidien.",
+    "content": "## Une transformation ne se décrète pas\n\nLes clés pour embarquer vos équipes et ancrer la transformation dans le quotidien. Dans les organisations, le changement échoue rarement par manque de slides. Il échoue parce que les priorités sont floues, les irritants terrain mal compris et les comportements attendus insuffisamment accompagnés.\n\nLa transformation durable demande une articulation fine entre vision, gouvernance, communication, exécution et mesure. Chaque étape doit créer de la confiance et rendre les progrès visibles.\n\n## Les erreurs fréquentes\n\n- Lancer trop de chantiers en parallèle.\n- Sous-estimer les résistances légitimes.\n- Confondre communication et appropriation.\n- Piloter l’activité sans mesurer l’impact.\n\n## Les bonnes pratiques\n\nCommencer par clarifier le pourquoi, concentrer l’énergie sur quelques priorités, créer des boucles de feedback et rendre les apprentissages visibles. Une transformation réussie avance par preuves, pas par injonctions.\n\n## À retenir\n\nLe changement durable repose sur une promesse simple : aider les équipes à mieux réussir dans leur réalité quotidienne, sans ajouter de complexité inutile.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Transformation & Performance",
+    "geo_intent": "expertise",
+    "keywords": [
+      "transformation",
+      "IA",
+      "performance",
+      "leadership",
+      "agilité",
+      "DevOps",
+      "adoption IA"
+    ],
+    "takeaways": [
+      "Une transformation réussie commence par un diagnostic clair des irritants et des priorités.",
+      "La valeur apparaît lorsque stratégie, gouvernance et exécution sont alignées.",
+      "L’impact durable dépend de l’adhésion des équipes et de la capacité à ancrer les changements."
+    ],
+    "cta": {
+      "title": "Votre transformation a besoin d’un cadrage clair et actionnable ?",
+      "text": "Clarifions vos priorités, vos irritants terrain et vos leviers de transformation pour construire une feuille de route utile et adoptée.",
+      "label": "Demander un diagnostic",
+      "url": "/diagnostic-adoption-ia-transformation/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "leviers-performance-durable",
+    "title": "Les 5 leviers d’une performance durable",
+    "category": "Performance",
+    "excerpt": "Focaliser vos efforts sur ce qui compte vraiment pour créer de l’impact mesurable.",
+    "date": "2026-04-08",
+    "read_time": "6 min",
+    "type": "insight",
+    "priority": 97,
+    "featured": true,
+    "image": "/assets/img/articles/leviers-performance-durable.svg",
+    "seo_title": "Les 5 leviers d’une performance durable — Cedrick Benittah",
+    "seo_description": "Focaliser vos efforts sur ce qui compte vraiment pour créer de l’impact mesurable.",
+    "content": "## Comprendre le sujet\n\nFocaliser vos efforts sur ce qui compte vraiment pour créer de l’impact mesurable. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Leadership & Coaching",
+    "geo_intent": "support",
+    "keywords": [
+      "leadership",
+      "coaching dirigeant",
+      "coaching manager",
+      "performance durable",
+      "posture managériale"
+    ],
+    "takeaways": [
+      "La transformation exige une posture managériale claire, stable et cohérente.",
+      "Le leadership se mesure à la capacité à créer du sens, décider et embarquer dans la durée.",
+      "La performance durable repose autant sur l’énergie humaine que sur l’organisation du travail."
+    ],
+    "cta": {
+      "title": "Vous voulez renforcer la posture de vos dirigeants, managers ou équipes ?",
+      "text": "Un accompagnement expérimenté permet de travailler la clarté, la posture, l’engagement et la performance collective dans les moments de transformation.",
+      "label": "Planifier un rendez-vous découverte",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "pourquoi-coach-agile-organisation-agile",
+    "title": "Pourquoi un Coach Agile est Essentiel dans une Organisation Agile",
+    "category": "Coaching agile",
+    "excerpt": "Pourquoi avoir un coach agile dans une organisation agile fait toute la différence.",
+    "date": "2025-08-05",
+    "read_time": "8 min",
+    "type": "coaching",
+    "priority": 96,
+    "featured": true,
+    "image": "/assets/img/articles/pourquoi-coach-agile-organisation-agile.svg",
+    "seo_title": "Pourquoi un Coach Agile est Essentiel dans une Organisation Agile — Cedrick Benittah",
+    "seo_description": "Pourquoi avoir un coach agile dans une organisation agile fait toute la différence.",
+    "content": "## Comprendre le sujet\n\nPourquoi avoir un coach agile dans une organisation agile fait toute la différence. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "quotidien-scrum-master",
+    "title": "Le quotidien d’un Scrum Master",
+    "category": "Coaching agile",
+    "excerpt": "Le quotidien d’un Scrum Master : bien plus que des stand-ups et du Jira.",
+    "date": "2025-07-05",
+    "read_time": "7 min",
+    "type": "coaching",
+    "priority": 95,
+    "featured": true,
+    "image": "/assets/img/articles/quotidien-scrum-master.svg",
+    "seo_title": "Le quotidien d’un Scrum Master — Cedrick Benittah",
+    "seo_description": "Le quotidien d’un Scrum Master : bien plus que des stand-ups et du Jira.",
+    "content": "## Un rôle souvent réduit à ses cérémonies\n\nLe quotidien d’un Scrum Master : bien plus que des stand-ups et du Jira. Dans beaucoup d’organisations, le Scrum Master est encore perçu comme un animateur de daily, un gardien de Jira ou un facilitateur de réunions. C’est une vision trop pauvre du rôle.\n\nSon quotidien réel consiste à créer les conditions d’un meilleur delivery : rendre les obstacles visibles, protéger le focus, fluidifier les interactions et aider l’équipe à progresser dans sa capacité à apprendre.\n\n## Les responsabilités qui créent de la valeur\n\n- Faciliter les rituels sans les rendre mécaniques.\n- Aider le Product Owner à clarifier la valeur et les priorités.\n- Rendre les dépendances explicites.\n- Accompagner l’équipe dans l’amélioration continue.\n- Installer une culture du feedback et de la responsabilité.\n\n## Ce qui fait la différence\n\nUn bon Scrum Master ne cherche pas à devenir indispensable. Il développe l’autonomie de l’équipe. Il observe, questionne, confronte avec respect et aide chacun à mieux jouer son rôle.\n\nDans les environnements complexes, cette posture est essentielle : elle évite que l’agilité devienne une simple mécanique de planning, déconnectée de la valeur réelle.\n\n## Mon approche\n\nJ’accompagne les Scrum Masters, Product Owners et managers pour remettre du sens dans les pratiques agiles : moins de cérémonies décoratives, plus de clarté, plus d’impact et plus de responsabilité collective.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "plonger-profondeurs-leadership",
+    "title": "Plonger dans les profondeurs du leadership",
+    "category": "Leadership",
+    "excerpt": "Ce que le coaching agile et le guidage de palanquée ont en commun : accompagner sans dominer.",
+    "date": "2024-12-04",
+    "read_time": "7 min",
+    "type": "coaching",
+    "priority": 490,
+    "featured": true,
+    "image": "/assets/img/articles/plonger-profondeurs-leadership.svg",
+    "seo_title": "Plonger dans les profondeurs du leadership — Cedrick Benittah",
+    "seo_description": "Ce que le coaching agile et le guidage de palanquée ont en commun : accompagner sans dominer.",
+    "content": "## Comprendre le sujet\n\nCe que le coaching agile et le guidage de palanquée ont en commun : accompagner sans dominer. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Leadership & Coaching",
+    "geo_intent": "support",
+    "keywords": [
+      "leadership",
+      "coaching dirigeant",
+      "coaching manager",
+      "performance durable",
+      "posture managériale"
+    ],
+    "takeaways": [
+      "La transformation exige une posture managériale claire, stable et cohérente.",
+      "Le leadership se mesure à la capacité à créer du sens, décider et embarquer dans la durée.",
+      "La performance durable repose autant sur l’énergie humaine que sur l’organisation du travail."
+    ],
+    "cta": {
+      "title": "Vous voulez renforcer la posture de vos dirigeants, managers ou équipes ?",
+      "text": "Un accompagnement expérimenté permet de travailler la clarté, la posture, l’engagement et la performance collective dans les moments de transformation.",
+      "label": "Planifier un rendez-vous découverte",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "mode-produit-vs-mode-projet",
+    "title": "Mode Produit vs Mode Projet : la dualité de la gestion pour une vision durable",
+    "category": "Agilité",
+    "excerpt": "Deux approches distinctes pour structurer la réalisation d’initiatives en entreprise.",
+    "date": "2024-09-30",
+    "read_time": "8 min",
+    "type": "coaching",
+    "priority": 93,
+    "featured": false,
+    "image": "/assets/img/articles/mode-produit-vs-mode-projet.svg",
+    "seo_title": "Mode Produit vs Mode Projet : la dualité de la gestion pour une vision durable — Cedrick Benittah",
+    "seo_description": "Deux approches distinctes pour structurer la réalisation d’initiatives en entreprise.",
+    "content": "## Comprendre le sujet\n\nDeux approches distinctes pour structurer la réalisation d’initiatives en entreprise. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "scrum-master-vs-chef-de-projet",
+    "title": "Scrum Master vs Chef de Projet : deux rôles, une mission, des approches radicalement différentes",
+    "category": "Agilité",
+    "excerpt": "Deux rôles souvent confondus mais profondément différents dans leurs responsabilités.",
+    "date": "2024-09-30",
+    "read_time": "8 min",
+    "type": "coaching",
+    "priority": 92,
+    "featured": false,
+    "image": "/assets/img/articles/scrum-master-vs-chef-de-projet.svg",
+    "seo_title": "Scrum Master vs Chef de Projet : deux rôles, une mission, des approches radicalement différentes — Cedrick Benittah",
+    "seo_description": "Deux rôles souvent confondus mais profondément différents dans leurs responsabilités.",
+    "content": "## Un rôle souvent réduit à ses cérémonies\n\nDeux rôles souvent confondus mais profondément différents dans leurs responsabilités. Dans beaucoup d’organisations, le Scrum Master est encore perçu comme un animateur de daily, un gardien de Jira ou un facilitateur de réunions. C’est une vision trop pauvre du rôle.\n\nSon quotidien réel consiste à créer les conditions d’un meilleur delivery : rendre les obstacles visibles, protéger le focus, fluidifier les interactions et aider l’équipe à progresser dans sa capacité à apprendre.\n\n## Les responsabilités qui créent de la valeur\n\n- Faciliter les rituels sans les rendre mécaniques.\n- Aider le Product Owner à clarifier la valeur et les priorités.\n- Rendre les dépendances explicites.\n- Accompagner l’équipe dans l’amélioration continue.\n- Installer une culture du feedback et de la responsabilité.\n\n## Ce qui fait la différence\n\nUn bon Scrum Master ne cherche pas à devenir indispensable. Il développe l’autonomie de l’équipe. Il observe, questionne, confronte avec respect et aide chacun à mieux jouer son rôle.\n\nDans les environnements complexes, cette posture est essentielle : elle évite que l’agilité devienne une simple mécanique de planning, déconnectée de la valeur réelle.\n\n## Mon approche\n\nJ’accompagne les Scrum Masters, Product Owners et managers pour remettre du sens dans les pratiques agiles : moins de cérémonies décoratives, plus de clarté, plus d’impact et plus de responsabilité collective.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "manifestes-agiles-revolution-culturelle",
+    "title": "Les Manifestes Agiles : une révolution culturelle pour l’entreprise du XXIe siècle",
+    "category": "Agilité",
+    "excerpt": "Le Manifeste Agile comme tournant culturel dans le travail d’équipe et le développement produit.",
+    "date": "2024-09-30",
+    "read_time": "7 min",
+    "type": "coaching",
+    "priority": 91,
+    "featured": false,
+    "image": "/assets/img/articles/manifestes-agiles-revolution-culturelle.svg",
+    "seo_title": "Les Manifestes Agiles : une révolution culturelle pour l’entreprise du XXIe siècle — Cedrick Benittah",
+    "seo_description": "Le Manifeste Agile comme tournant culturel dans le travail d’équipe et le développement produit.",
+    "content": "## Comprendre le sujet\n\nLe Manifeste Agile comme tournant culturel dans le travail d’équipe et le développement produit. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "lean-management-et-scrum",
+    "title": "Lean Management et Scrum : une alliance pour maximiser l’efficacité de vos équipes",
+    "category": "Agilité",
+    "excerpt": "Lean et Scrum se complètent pour améliorer l’efficacité et maximiser la valeur livrée.",
+    "date": "2024-09-30",
+    "read_time": "7 min",
+    "type": "coaching",
+    "priority": 90,
+    "featured": false,
+    "image": "/assets/img/articles/lean-management-et-scrum.svg",
+    "seo_title": "Lean Management et Scrum : une alliance pour maximiser l’efficacité de vos équipes — Cedrick Benittah",
+    "seo_description": "Lean et Scrum se complètent pour améliorer l’efficacité et maximiser la valeur livrée.",
+    "content": "## Comprendre le sujet\n\nLean et Scrum se complètent pour améliorer l’efficacité et maximiser la valeur livrée. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "IA & Adoption",
+    "geo_intent": "expertise",
+    "keywords": [
+      "adoption IA",
+      "diagnostic IA",
+      "cas d’usage IA",
+      "IA Act",
+      "gouvernance IA",
+      "transformation IA"
+    ],
+    "takeaways": [
+      "L’IA crée de la valeur lorsqu’elle part d’un irritant métier réel, pas d’un effet de mode.",
+      "Les cas d’usage doivent être priorisés selon leur valeur, leur faisabilité et leurs risques.",
+      "L’adoption durable suppose un cadre clair, des managers alignés et une feuille de route concrète."
+    ],
+    "cta": {
+      "title": "Vous souhaitez passer de l’expérimentation IA à une feuille de route concrète ?",
+      "text": "Le Diagnostic Adoption IA & Transformation permet d’identifier les cas d’usage utiles, de clarifier les risques et de prioriser les actions 30 / 60 / 90 jours.",
+      "label": "Découvrir le diagnostic IA",
+      "url": "/diagnostic-adoption-ia-transformation/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "exemple-epic-user-stories-taches",
+    "title": "Exemple Epic, User Stories et Tâches",
+    "category": "Agilité",
+    "excerpt": "Un exemple concret de découpage entre épics, user stories, story points et tâches.",
+    "date": "2024-09-05",
+    "read_time": "6 min",
+    "type": "coaching",
+    "priority": 89,
+    "featured": false,
+    "image": "/assets/img/articles/exemple-epic-user-stories-taches.svg",
+    "seo_title": "Exemple Epic, User Stories et Tâches — Cedrick Benittah",
+    "seo_description": "Un exemple concret de découpage entre épics, user stories, story points et tâches.",
+    "content": "## Comprendre le sujet\n\nUn exemple concret de découpage entre épics, user stories, story points et tâches. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "maitrisez-velocite-agile",
+    "title": "Maîtrisez la vélocité : le secret pour accélérer sans brûler les ailes en agilité",
+    "category": "Agilité",
+    "excerpt": "La vélocité agile comme repère d’apprentissage et non comme outil de pression.",
+    "date": "2024-08-30",
+    "read_time": "7 min",
+    "type": "coaching",
+    "priority": 88,
+    "featured": false,
+    "image": "/assets/img/articles/maitrisez-velocite-agile.svg",
+    "seo_title": "Maîtrisez la vélocité : le secret pour accélérer sans brûler les ailes en agilité — Cedrick Benittah",
+    "seo_description": "La vélocité agile comme repère d’apprentissage et non comme outil de pression.",
+    "content": "## Comprendre le sujet\n\nLa vélocité agile comme repère d’apprentissage et non comme outil de pression. Ce sujet est central pour les organisations qui veulent gagner en clarté, en efficacité et en capacité d’adaptation.\n\nL’agilité n’est pas une méthode à appliquer mécaniquement. C’est une manière de créer de la valeur dans l’incertitude, en s’appuyant sur la collaboration, l’apprentissage et la responsabilité collective.\n\n## Ce qu’il faut regarder en priorité\n\n- La clarté du produit ou du service attendu.\n- La qualité des interactions entre métiers, tech et management.\n- La capacité à prioriser ce qui crée réellement de la valeur.\n- La façon dont l’équipe apprend de ses résultats.\n\n## Le point de vigilance\n\nUne organisation peut adopter le vocabulaire agile sans changer ses comportements. Les rituels deviennent alors des obligations de calendrier, et non des espaces de décision, de synchronisation et d’amélioration.\n\n## À retenir\n\nLa maturité agile se voit dans la qualité des décisions, la fluidité du delivery, la transparence des obstacles et la capacité à améliorer le système de travail.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "agile-devops-duo-gagnant",
+    "title": "Boostez votre équipe avec Agile et DevOps : le duo gagnant pour réussir",
+    "category": "Agilité & DevOps",
+    "excerpt": "Agile et DevOps fluidifient la collaboration, la qualité et la livraison continue.",
+    "date": "2024-08-20",
+    "read_time": "7 min",
+    "type": "coaching",
+    "priority": 87,
+    "featured": false,
+    "image": "/assets/img/articles/agile-devops-duo-gagnant.svg",
+    "seo_title": "Boostez votre équipe avec Agile et DevOps : le duo gagnant pour réussir — Cedrick Benittah",
+    "seo_description": "Agile et DevOps fluidifient la collaboration, la qualité et la livraison continue.",
+    "content": "## Agile et DevOps : deux dimensions d’un même flux\n\nAgile et DevOps fluidifient la collaboration, la qualité et la livraison continue. Agile améliore la collaboration, l’adaptation et la priorisation. DevOps renforce la qualité, l’automatisation et la capacité à livrer régulièrement. Ensemble, ils permettent de passer d’une organisation centrée sur les silos à une organisation centrée sur le flux de valeur.\n\n## Les bénéfices attendus\n\n- Réduire les temps d’attente entre idée et production.\n- Diminuer les frictions entre métiers, développement et opérations.\n- Rendre la qualité visible plus tôt.\n- Sécuriser la livraison continue.\n\n## Le piège à éviter\n\nMettre en place des outils sans transformer les responsabilités. Le vrai sujet n’est pas uniquement la chaîne CI/CD, mais la capacité collective à apprendre, corriger et améliorer le système.\n\n## Mon approche\n\nJe relie pratiques agiles, culture DevOps et pilotage par la valeur pour aider les équipes à livrer mieux, plus sereinement et avec des indicateurs utiles.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "comment-echouer-conduite-changement",
+    "title": "Comment échouer dans la conduite du changement",
+    "category": "Transformation",
+    "excerpt": "Reconnaître les erreurs qui compromettent une transformation permet de mieux la sécuriser.",
+    "date": "2024-08-10",
+    "read_time": "6 min",
+    "type": "coaching",
+    "priority": 86,
+    "featured": false,
+    "image": "/assets/img/articles/comment-echouer-conduite-changement.svg",
+    "seo_title": "Comment échouer dans la conduite du changement — Cedrick Benittah",
+    "seo_description": "Reconnaître les erreurs qui compromettent une transformation permet de mieux la sécuriser.",
+    "content": "## Une transformation ne se décrète pas\n\nReconnaître les erreurs qui compromettent une transformation permet de mieux la sécuriser. Dans les organisations, le changement échoue rarement par manque de slides. Il échoue parce que les priorités sont floues, les irritants terrain mal compris et les comportements attendus insuffisamment accompagnés.\n\nLa transformation durable demande une articulation fine entre vision, gouvernance, communication, exécution et mesure. Chaque étape doit créer de la confiance et rendre les progrès visibles.\n\n## Les erreurs fréquentes\n\n- Lancer trop de chantiers en parallèle.\n- Sous-estimer les résistances légitimes.\n- Confondre communication et appropriation.\n- Piloter l’activité sans mesurer l’impact.\n\n## Les bonnes pratiques\n\nCommencer par clarifier le pourquoi, concentrer l’énergie sur quelques priorités, créer des boucles de feedback et rendre les apprentissages visibles. Une transformation réussie avance par preuves, pas par injonctions.\n\n## À retenir\n\nLe changement durable repose sur une promesse simple : aider les équipes à mieux réussir dans leur réalité quotidienne, sans ajouter de complexité inutile.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Transformation & Performance",
+    "geo_intent": "expertise",
+    "keywords": [
+      "transformation",
+      "IA",
+      "performance",
+      "leadership",
+      "agilité",
+      "DevOps",
+      "adoption IA"
+    ],
+    "takeaways": [
+      "Une transformation réussie commence par un diagnostic clair des irritants et des priorités.",
+      "La valeur apparaît lorsque stratégie, gouvernance et exécution sont alignées.",
+      "L’impact durable dépend de l’adhésion des équipes et de la capacité à ancrer les changements."
+    ],
+    "cta": {
+      "title": "Votre transformation a besoin d’un cadrage clair et actionnable ?",
+      "text": "Clarifions vos priorités, vos irritants terrain et vos leviers de transformation pour construire une feuille de route utile et adoptée.",
+      "label": "Demander un diagnostic",
+      "url": "/diagnostic-adoption-ia-transformation/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "8-cles-gerer-stress-raphael-homat",
+    "title": "8 Clés pour Gérer le Stress par Raphaël Homat",
+    "category": "Lectures",
+    "excerpt": "Une lecture pratique sur la respiration, l’équilibre de vie et la préparation mentale.",
+    "date": "2024-03-03",
+    "read_time": "5 min",
+    "type": "lecture",
+    "priority": 85,
+    "featured": false,
+    "image": "/assets/img/articles/8-cles-gerer-stress-raphael-homat.svg",
+    "seo_title": "8 Clés pour Gérer le Stress par Raphaël Homat — Cedrick Benittah",
+    "seo_description": "Une lecture pratique sur la respiration, l’équilibre de vie et la préparation mentale.",
+    "content": "## Pourquoi cette lecture mérite attention\n\nUne lecture pratique sur la respiration, l’équilibre de vie et la préparation mentale. Ce type d’ouvrage est utile lorsqu’on souhaite nourrir sa pratique professionnelle avec des repères simples, concrets et directement activables.\n\nDans un contexte de transformation, les lectures ne sont pas seulement des moments de recul. Elles permettent de prendre de la hauteur, de remettre en question ses automatismes et d’enrichir sa posture de manager, coach, facilitateur ou dirigeant.\n\n## Ce que j’en retiens\n\n- Une idée forte : la performance durable repose autant sur la clarté intérieure que sur la méthode.\n- Un usage terrain : transformer les concepts en questions puissantes, en routines et en conversations utiles.\n- Une vigilance : ne pas consommer les outils comme des recettes, mais les adapter au contexte réel.\n\n## Application en entreprise\n\nDans une équipe, ce type de lecture peut devenir un support de discussion : qu’est-ce qui nous aide à mieux coopérer ? Qu’est-ce qui crée de la tension inutile ? Quels rituels devons-nous simplifier ?\n\nLa valeur d’une lecture professionnelle se mesure à ce qu’elle change dans les comportements. Une idée utile doit pouvoir devenir une pratique, une décision ou un ajustement observable.\n\n## À retenir\n\nLire pour progresser, ce n’est pas accumuler des références. C’est clarifier sa pensée, affûter sa posture et mieux accompagner les personnes dans des environnements complexes.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Leadership & Coaching",
+    "geo_intent": "support",
+    "keywords": [
+      "leadership",
+      "coaching dirigeant",
+      "coaching manager",
+      "performance durable",
+      "posture managériale"
+    ],
+    "takeaways": [
+      "La transformation exige une posture managériale claire, stable et cohérente.",
+      "Le leadership se mesure à la capacité à créer du sens, décider et embarquer dans la durée.",
+      "La performance durable repose autant sur l’énergie humaine que sur l’organisation du travail."
+    ],
+    "cta": {
+      "title": "Vous voulez renforcer la posture de vos dirigeants, managers ou équipes ?",
+      "text": "Un accompagnement expérimenté permet de travailler la clarté, la posture, l’engagement et la performance collective dans les moments de transformation.",
+      "label": "Planifier un rendez-vous découverte",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "performance-vie-jean-christophe-maisonneuve",
+    "title": "La Performance d’une Vie de Jean-Christophe Maisonneuve",
+    "category": "Lectures",
+    "excerpt": "Un récit inspirant mêlant préparation mentale, parcours de vie et dépassement de soi.",
+    "date": "2024-03-03",
+    "read_time": "5 min",
+    "type": "lecture",
+    "priority": 84,
+    "featured": false,
+    "image": "/assets/img/articles/performance-vie-jean-christophe-maisonneuve.svg",
+    "seo_title": "La Performance d’une Vie de Jean-Christophe Maisonneuve — Cedrick Benittah",
+    "seo_description": "Un récit inspirant mêlant préparation mentale, parcours de vie et dépassement de soi.",
+    "content": "## Pourquoi cette lecture mérite attention\n\nUn récit inspirant mêlant préparation mentale, parcours de vie et dépassement de soi. Ce type d’ouvrage est utile lorsqu’on souhaite nourrir sa pratique professionnelle avec des repères simples, concrets et directement activables.\n\nDans un contexte de transformation, les lectures ne sont pas seulement des moments de recul. Elles permettent de prendre de la hauteur, de remettre en question ses automatismes et d’enrichir sa posture de manager, coach, facilitateur ou dirigeant.\n\n## Ce que j’en retiens\n\n- Une idée forte : la performance durable repose autant sur la clarté intérieure que sur la méthode.\n- Un usage terrain : transformer les concepts en questions puissantes, en routines et en conversations utiles.\n- Une vigilance : ne pas consommer les outils comme des recettes, mais les adapter au contexte réel.\n\n## Application en entreprise\n\nDans une équipe, ce type de lecture peut devenir un support de discussion : qu’est-ce qui nous aide à mieux coopérer ? Qu’est-ce qui crée de la tension inutile ? Quels rituels devons-nous simplifier ?\n\nLa valeur d’une lecture professionnelle se mesure à ce qu’elle change dans les comportements. Une idée utile doit pouvoir devenir une pratique, une décision ou un ajustement observable.\n\n## À retenir\n\nLire pour progresser, ce n’est pas accumuler des références. C’est clarifier sa pensée, affûter sa posture et mieux accompagner les personnes dans des environnements complexes.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Leadership & Coaching",
+    "geo_intent": "support",
+    "keywords": [
+      "leadership",
+      "coaching dirigeant",
+      "coaching manager",
+      "performance durable",
+      "posture managériale"
+    ],
+    "takeaways": [
+      "La transformation exige une posture managériale claire, stable et cohérente.",
+      "Le leadership se mesure à la capacité à créer du sens, décider et embarquer dans la durée.",
+      "La performance durable repose autant sur l’énergie humaine que sur l’organisation du travail."
+    ],
+    "cta": {
+      "title": "Vous voulez renforcer la posture de vos dirigeants, managers ou équipes ?",
+      "text": "Un accompagnement expérimenté permet de travailler la clarté, la posture, l’engagement et la performance collective dans les moments de transformation.",
+      "label": "Planifier un rendez-vous découverte",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "culture-agile",
+    "title": "Culture Agile",
+    "category": "Lectures",
+    "excerpt": "Jean-Claude Grosjean explore les contours de la culture agile et son manifeste.",
+    "date": "2019-02-10",
+    "read_time": "5 min",
+    "type": "lecture",
+    "priority": 83,
+    "featured": false,
+    "image": "/assets/img/articles/culture-agile.svg",
+    "seo_title": "Culture Agile — Cedrick Benittah",
+    "seo_description": "Jean-Claude Grosjean explore les contours de la culture agile et son manifeste.",
+    "content": "## Pourquoi cette lecture mérite attention\n\nJean-Claude Grosjean explore les contours de la culture agile et son manifeste. Ce type d’ouvrage est utile lorsqu’on souhaite nourrir sa pratique professionnelle avec des repères simples, concrets et directement activables.\n\nDans un contexte de transformation, les lectures ne sont pas seulement des moments de recul. Elles permettent de prendre de la hauteur, de remettre en question ses automatismes et d’enrichir sa posture de manager, coach, facilitateur ou dirigeant.\n\n## Ce que j’en retiens\n\n- Une idée forte : la performance durable repose autant sur la clarté intérieure que sur la méthode.\n- Un usage terrain : transformer les concepts en questions puissantes, en routines et en conversations utiles.\n- Une vigilance : ne pas consommer les outils comme des recettes, mais les adapter au contexte réel.\n\n## Application en entreprise\n\nDans une équipe, ce type de lecture peut devenir un support de discussion : qu’est-ce qui nous aide à mieux coopérer ? Qu’est-ce qui crée de la tension inutile ? Quels rituels devons-nous simplifier ?\n\nLa valeur d’une lecture professionnelle se mesure à ce qu’elle change dans les comportements. Une idée utile doit pouvoir devenir une pratique, une décision ou un ajustement observable.\n\n## À retenir\n\nLire pour progresser, ce n’est pas accumuler des références. C’est clarifier sa pensée, affûter sa posture et mieux accompagner les personnes dans des environnements complexes.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "scrum-pratique-vivante-agilite",
+    "title": "Scrum – Pour une pratique vivante de l’agilité",
+    "category": "Lectures",
+    "excerpt": "Un ouvrage pour s’initier ou approfondir Scrum, ses rôles et ses pratiques vivantes.",
+    "date": "2019-01-21",
+    "read_time": "5 min",
+    "type": "lecture",
+    "priority": 82,
+    "featured": false,
+    "image": "/assets/img/articles/scrum-pratique-vivante-agilite.svg",
+    "seo_title": "Scrum – Pour une pratique vivante de l’agilité — Cedrick Benittah",
+    "seo_description": "Un ouvrage pour s’initier ou approfondir Scrum, ses rôles et ses pratiques vivantes.",
+    "content": "## Pourquoi cette lecture mérite attention\n\nUn ouvrage pour s’initier ou approfondir Scrum, ses rôles et ses pratiques vivantes. Ce type d’ouvrage est utile lorsqu’on souhaite nourrir sa pratique professionnelle avec des repères simples, concrets et directement activables.\n\nDans un contexte de transformation, les lectures ne sont pas seulement des moments de recul. Elles permettent de prendre de la hauteur, de remettre en question ses automatismes et d’enrichir sa posture de manager, coach, facilitateur ou dirigeant.\n\n## Ce que j’en retiens\n\n- Une idée forte : la performance durable repose autant sur la clarté intérieure que sur la méthode.\n- Un usage terrain : transformer les concepts en questions puissantes, en routines et en conversations utiles.\n- Une vigilance : ne pas consommer les outils comme des recettes, mais les adapter au contexte réel.\n\n## Application en entreprise\n\nDans une équipe, ce type de lecture peut devenir un support de discussion : qu’est-ce qui nous aide à mieux coopérer ? Qu’est-ce qui crée de la tension inutile ? Quels rituels devons-nous simplifier ?\n\nLa valeur d’une lecture professionnelle se mesure à ce qu’elle change dans les comportements. Une idée utile doit pouvoir devenir une pratique, une décision ou un ajustement observable.\n\n## À retenir\n\nLire pour progresser, ce n’est pas accumuler des références. C’est clarifier sa pensée, affûter sa posture et mieux accompagner les personnes dans des environnements complexes.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "parole-sport-combat",
+    "title": "La parole est un sport de combat",
+    "category": "Lectures",
+    "excerpt": "Une réflexion forte sur l’oralité, la prise de parole et l’engagement public.",
+    "date": "2018-12-12",
+    "read_time": "5 min",
+    "type": "lecture",
+    "priority": 81,
+    "featured": false,
+    "image": "/assets/img/articles/parole-sport-combat.svg",
+    "seo_title": "La parole est un sport de combat — Cedrick Benittah",
+    "seo_description": "Une réflexion forte sur l’oralité, la prise de parole et l’engagement public.",
+    "content": "## Pourquoi cette lecture mérite attention\n\nUne réflexion forte sur l’oralité, la prise de parole et l’engagement public. Ce type d’ouvrage est utile lorsqu’on souhaite nourrir sa pratique professionnelle avec des repères simples, concrets et directement activables.\n\nDans un contexte de transformation, les lectures ne sont pas seulement des moments de recul. Elles permettent de prendre de la hauteur, de remettre en question ses automatismes et d’enrichir sa posture de manager, coach, facilitateur ou dirigeant.\n\n## Ce que j’en retiens\n\n- Une idée forte : la performance durable repose autant sur la clarté intérieure que sur la méthode.\n- Un usage terrain : transformer les concepts en questions puissantes, en routines et en conversations utiles.\n- Une vigilance : ne pas consommer les outils comme des recettes, mais les adapter au contexte réel.\n\n## Application en entreprise\n\nDans une équipe, ce type de lecture peut devenir un support de discussion : qu’est-ce qui nous aide à mieux coopérer ? Qu’est-ce qui crée de la tension inutile ? Quels rituels devons-nous simplifier ?\n\nLa valeur d’une lecture professionnelle se mesure à ce qu’elle change dans les comportements. Une idée utile doit pouvoir devenir une pratique, une décision ou un ajustement observable.\n\n## À retenir\n\nLire pour progresser, ce n’est pas accumuler des références. C’est clarifier sa pensée, affûter sa posture et mieux accompagner les personnes dans des environnements complexes.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Leadership & Coaching",
+    "geo_intent": "support",
+    "keywords": [
+      "leadership",
+      "coaching dirigeant",
+      "coaching manager",
+      "performance durable",
+      "posture managériale"
+    ],
+    "takeaways": [
+      "La transformation exige une posture managériale claire, stable et cohérente.",
+      "Le leadership se mesure à la capacité à créer du sens, décider et embarquer dans la durée.",
+      "La performance durable repose autant sur l’énergie humaine que sur l’organisation du travail."
+    ],
+    "cta": {
+      "title": "Vous voulez renforcer la posture de vos dirigeants, managers ou équipes ?",
+      "text": "Un accompagnement expérimenté permet de travailler la clarté, la posture, l’engagement et la performance collective dans les moments de transformation.",
+      "label": "Planifier un rendez-vous découverte",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "knowledge-management-entreprise",
+    "title": "Knowledge management en entreprise",
+    "category": "Lectures",
+    "excerpt": "Le Knowledge Management associe pérennisation et transformation dans l’entreprise.",
+    "date": "2018-11-20",
+    "read_time": "6 min",
+    "type": "lecture",
+    "priority": 80,
+    "featured": false,
+    "image": "/assets/img/articles/knowledge-management-entreprise.svg",
+    "seo_title": "Knowledge management en entreprise — Cedrick Benittah",
+    "seo_description": "Le Knowledge Management associe pérennisation et transformation dans l’entreprise.",
+    "content": "## Pourquoi cette lecture mérite attention\n\nLe Knowledge Management associe pérennisation et transformation dans l’entreprise. Ce type d’ouvrage est utile lorsqu’on souhaite nourrir sa pratique professionnelle avec des repères simples, concrets et directement activables.\n\nDans un contexte de transformation, les lectures ne sont pas seulement des moments de recul. Elles permettent de prendre de la hauteur, de remettre en question ses automatismes et d’enrichir sa posture de manager, coach, facilitateur ou dirigeant.\n\n## Ce que j’en retiens\n\n- Une idée forte : la performance durable repose autant sur la clarté intérieure que sur la méthode.\n- Un usage terrain : transformer les concepts en questions puissantes, en routines et en conversations utiles.\n- Une vigilance : ne pas consommer les outils comme des recettes, mais les adapter au contexte réel.\n\n## Application en entreprise\n\nDans une équipe, ce type de lecture peut devenir un support de discussion : qu’est-ce qui nous aide à mieux coopérer ? Qu’est-ce qui crée de la tension inutile ? Quels rituels devons-nous simplifier ?\n\nLa valeur d’une lecture professionnelle se mesure à ce qu’elle change dans les comportements. Une idée utile doit pouvoir devenir une pratique, une décision ou un ajustement observable.\n\n## À retenir\n\nLire pour progresser, ce n’est pas accumuler des références. C’est clarifier sa pensée, affûter sa posture et mieux accompagner les personnes dans des environnements complexes.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Lectures & Inspirations",
+    "geo_intent": "support",
+    "keywords": [
+      "lectures business",
+      "leadership",
+      "culture agile",
+      "inspiration managériale"
+    ],
+    "takeaways": [
+      "Une lecture utile est une lecture que l’on transforme en pratique concrète.",
+      "Les modèles inspirants doivent être adaptés au contexte réel des équipes.",
+      "L’impact se joue dans les petits ajustements répétés, pas seulement dans les grandes intentions."
+    ],
+    "cta": {
+      "title": "Vous souhaitez transformer ces inspirations en actions concrètes ?",
+      "text": "Je vous aide à traduire les apprentissages, lectures et retours d’expérience en pratiques utiles pour vos managers et vos équipes.",
+      "label": "Échanger sur vos enjeux",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "le-knowledge-management",
+    "title": "Le Knowledge Management",
+    "category": "Lectures",
+    "excerpt": "Un article approfondi sur la gestion des connaissances et les formes de transmission.",
+    "date": "2018-11-05",
+    "read_time": "6 min",
+    "type": "lecture",
+    "priority": 79,
+    "featured": false,
+    "image": "/assets/img/articles/le-knowledge-management.svg",
+    "seo_title": "Le Knowledge Management — Cedrick Benittah",
+    "seo_description": "Un article approfondi sur la gestion des connaissances et les formes de transmission.",
+    "content": "## Pourquoi cette lecture mérite attention\n\nUn article approfondi sur la gestion des connaissances et les formes de transmission. Ce type d’ouvrage est utile lorsqu’on souhaite nourrir sa pratique professionnelle avec des repères simples, concrets et directement activables.\n\nDans un contexte de transformation, les lectures ne sont pas seulement des moments de recul. Elles permettent de prendre de la hauteur, de remettre en question ses automatismes et d’enrichir sa posture de manager, coach, facilitateur ou dirigeant.\n\n## Ce que j’en retiens\n\n- Une idée forte : la performance durable repose autant sur la clarté intérieure que sur la méthode.\n- Un usage terrain : transformer les concepts en questions puissantes, en routines et en conversations utiles.\n- Une vigilance : ne pas consommer les outils comme des recettes, mais les adapter au contexte réel.\n\n## Application en entreprise\n\nDans une équipe, ce type de lecture peut devenir un support de discussion : qu’est-ce qui nous aide à mieux coopérer ? Qu’est-ce qui crée de la tension inutile ? Quels rituels devons-nous simplifier ?\n\nLa valeur d’une lecture professionnelle se mesure à ce qu’elle change dans les comportements. Une idée utile doit pouvoir devenir une pratique, une décision ou un ajustement observable.\n\n## À retenir\n\nLire pour progresser, ce n’est pas accumuler des références. C’est clarifier sa pensée, affûter sa posture et mieux accompagner les personnes dans des environnements complexes.\n",
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "pillar": "Lectures & Inspirations",
+    "geo_intent": "support",
+    "keywords": [
+      "lectures business",
+      "leadership",
+      "culture agile",
+      "inspiration managériale"
+    ],
+    "takeaways": [
+      "Une lecture utile est une lecture que l’on transforme en pratique concrète.",
+      "Les modèles inspirants doivent être adaptés au contexte réel des équipes.",
+      "L’impact se joue dans les petits ajustements répétés, pas seulement dans les grandes intentions."
+    ],
+    "cta": {
+      "title": "Vous souhaitez transformer ces inspirations en actions concrètes ?",
+      "text": "Je vous aide à traduire les apprentissages, lectures et retours d’expérience en pratiques utiles pour vos managers et vos équipes.",
+      "label": "Échanger sur vos enjeux",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "agilite-au-dela-des-methodes",
+    "title": "Agilité : au-delà des méthodes, l’état d’esprit",
+    "category": "Organisation & Agilité",
+    "excerpt": "Pourquoi l’agilité est d’abord une culture et comment la faire vivre réellement.",
+    "date": "2026-03-01",
+    "read_time": "6 min",
+    "type": "insight",
+    "priority": 78,
+    "featured": false,
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "image": "/assets/img/articles/agilite-au-dela-des-methodes.svg",
+    "seo_title": "Agilité : au-delà des méthodes, l’état d’esprit — Cédrick Benittah",
+    "seo_description": "Pourquoi l’agilité est d’abord une culture et comment la faire vivre réellement.",
+    "content": "## Pourquoi ce sujet compte\n\nPourquoi l’agilité est d’abord une culture et comment la faire vivre réellement.\n\n## Les leviers à activer\n\n- Clarifier le cap.\n- Prioriser les actions utiles.\n- Rendre les équipes actrices.\n- Mesurer l’impact dans la durée.\n\n## À retenir\n\nUne transformation réussie demande autant de méthode que de posture.",
+    "pillar": "Agilité & DevOps",
+    "geo_intent": "support",
+    "keywords": [
+      "agilité",
+      "DevOps",
+      "Scrum",
+      "delivery",
+      "performance collective",
+      "transformation agile"
+    ],
+    "takeaways": [
+      "L’agilité et le DevOps ne sont utiles que s’ils améliorent la coopération, la qualité et le delivery.",
+      "La performance vient de la clarté des priorités, de boucles de feedback courtes et d’un pilotage par la valeur.",
+      "Les rôles, rituels et indicateurs doivent rester au service des équipes, pas devenir une mécanique administrative."
+    ],
+    "cta": {
+      "title": "Votre organisation veut accélérer sans perdre en qualité ni en alignement ?",
+      "text": "Mon expérience en agilité, DevOps et delivery sert ici un objectif unique : rendre l’adoption IA plus claire, plus fiable et plus utile au terrain.",
+      "label": "Explorer les accompagnements",
+      "url": "/accompagnements/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "seo-strategique-attirer-bon-trafic",
+    "title": "SEO stratégique : attirer le bon trafic",
+    "category": "SEO & stratégie",
+    "excerpt": "Aligner contenu, intention de recherche et performance pour une croissance pérenne.",
+    "date": "2026-03-01",
+    "read_time": "6 min",
+    "type": "insight",
+    "priority": 77,
+    "featured": false,
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "image": "/assets/img/articles/seo-strategique-attirer-bon-trafic.svg",
+    "seo_title": "SEO stratégique : attirer le bon trafic — Cédrick Benittah",
+    "seo_description": "Aligner contenu, intention de recherche et performance pour une croissance pérenne.",
+    "content": "## Pourquoi ce sujet compte\n\nAligner contenu, intention de recherche et performance pour une croissance pérenne.\n\n## Les leviers à activer\n\n- Clarifier le cap.\n- Prioriser les actions utiles.\n- Rendre les équipes actrices.\n- Mesurer l’impact dans la durée.\n\n## À retenir\n\nUne transformation réussie demande autant de méthode que de posture.",
+    "pillar": "Transformation & Performance",
+    "geo_intent": "expertise",
+    "keywords": [
+      "transformation",
+      "IA",
+      "performance",
+      "leadership",
+      "agilité",
+      "DevOps",
+      "adoption IA"
+    ],
+    "takeaways": [
+      "Une transformation réussie commence par un diagnostic clair des irritants et des priorités.",
+      "La valeur apparaît lorsque stratégie, gouvernance et exécution sont alignées.",
+      "L’impact durable dépend de l’adhésion des équipes et de la capacité à ancrer les changements."
+    ],
+    "cta": {
+      "title": "Votre transformation a besoin d’un cadrage clair et actionnable ?",
+      "text": "Clarifions vos priorités, vos irritants terrain et vos leviers de transformation pour construire une feuille de route utile et adoptée.",
+      "label": "Demander un diagnostic",
+      "url": "/diagnostic-adoption-ia-transformation/"
+    },
+    "updated": "2026-06-24"
+  },
+  {
+    "slug": "performance-durable-avantage-competitif",
+    "title": "Performance durable : un avantage compétitif à long terme",
+    "category": "Performance",
+    "excerpt": "Culture, données et leviers managériaux au service de la performance.",
+    "date": "2026-05-12",
+    "read_time": "6 min",
+    "type": "insight",
+    "priority": 76,
+    "featured": false,
+    "status": "published",
+    "author": "Cédrick Benittah",
+    "image": "/assets/img/articles/performance-durable-avantage-competitif.svg",
+    "seo_title": "Performance durable : un avantage compétitif à long terme — Cédrick Benittah",
+    "seo_description": "Culture, données et leviers managériaux au service de la performance.",
+    "content": "La performance durable n’est pas une course à l’intensité. C’est une capacité collective à produire de la valeur dans la durée sans épuiser les individus ni désorganiser les systèmes.\n\nElle repose sur des objectifs clairs, des feedbacks réguliers, des indicateurs utiles et une culture de responsabilisation.\n\nLe rôle du management est central : clarifier, arbitrer, protéger les priorités et créer les conditions de l’engagement.\n\nUne organisation performante sait relier ambition, qualité d’exécution et apprentissage continu.\n\n## À retenir\n\nLa transformation, l’IA ou la performance ne produisent de résultats que lorsqu’elles sont reliées à une intention claire, une méthode adaptée et une dynamique humaine solide.\n\nÉchanger sur vos enjeux →",
+    "pillar": "Leadership & Coaching",
+    "geo_intent": "support",
+    "keywords": [
+      "leadership",
+      "coaching dirigeant",
+      "coaching manager",
+      "performance durable",
+      "posture managériale"
+    ],
+    "takeaways": [
+      "La transformation exige une posture managériale claire, stable et cohérente.",
+      "Le leadership se mesure à la capacité à créer du sens, décider et embarquer dans la durée.",
+      "La performance durable repose autant sur l’énergie humaine que sur l’organisation du travail."
+    ],
+    "cta": {
+      "title": "Vous voulez renforcer la posture de vos dirigeants, managers ou équipes ?",
+      "text": "Un accompagnement expérimenté permet de travailler la clarté, la posture, l’engagement et la performance collective dans les moments de transformation.",
+      "label": "Planifier un rendez-vous découverte",
+      "url": "/contact/"
+    },
+    "updated": "2026-06-24"
+  }
+]

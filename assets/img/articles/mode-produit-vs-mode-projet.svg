@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title-mode_produit_vs_mode_projet desc-mode_produit_vs_mode_projet">
+<title id="title-mode_produit_vs_mode_projet">Mode Produit vs Mode Projet : la dualité de la gestion pour une vision durable</title>
+<desc id="desc-mode_produit_vs_mode_projet">Visuel editorial pour Agilité.</desc>
+<defs>
+  <linearGradient id="bg-mode_produit_vs_mode_projet" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f5fbf8"/>
+    <stop offset=".58" stop-color="#fffaf4"/>
+    <stop offset="1" stop-color="#d5efe6"/>
+  </linearGradient>
+  <filter id="shadow-mode_produit_vs_mode_projet" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2c2014" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg-mode_produit_vs_mode_projet)"/>
+
+  <circle cx="1060" cy="120" r="148" fill="#178a67" opacity=".10"/>
+  <circle cx="940" cy="570" r="190" fill="#d5efe6" opacity=".42"/>
+  <circle cx="210" cy="570" r="150" fill="#178a67" opacity=".07"/>
+  <path d="M45 515 C225 430 320 640 520 545 C705 455 805 490 1155 350" fill="none" stroke="#178a67" stroke-width="2" opacity=".18"/>
+  <path d="M70 165 C230 95 320 285 480 210 C650 132 825 152 1115 88" fill="none" stroke="#d5efe6" stroke-width="2" opacity=".38"/>
+
+<rect x="38" y="38" width="1124" height="599" rx="46" fill="#ffffff" opacity=".64" filter="url(#shadow-mode_produit_vs_mode_projet)"/>
+<rect x="82" y="86" width="220" height="42" rx="21" fill="#178a67" opacity=".95"/>
+<text x="110" y="114" fill="#fffaf4" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" letter-spacing="1.6">AGILITÉ</text>
+<text x="82" y="177" fill="#178a67" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="2">8 MIN</text>
+<text x="82" y="255" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">Mode Produit vs Mode</text>
+<text x="82" y="302" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">Projet : la dualité de la</text>
+<text x="82" y="349" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">gestion pour une vision</text>
+<text x="82" y="396" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">durable</text>
+<text x="86" y="505" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">Deux approches distinctes pour structurer la</text>
+<text x="86" y="534" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">réalisation d’initiatives en entreprise.</text>
+<text x="86" y="592" fill="#14221c" opacity=".72" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Cédrick Benittah · Transformation, IA &amp; performance</text>
+<g>
+
+  <rect x="690" y="170" width="195" height="350" rx="32" fill="#ffffff" opacity=".76"/>
+  <rect x="920" y="170" width="195" height="350" rx="32" fill="#ff5a14" opacity=".54"/>
+  <path d="M735 255 H840 M735 330 H815 M735 405 H850" stroke="#178a67" stroke-width="12" stroke-linecap="round"/>
+  <path d="M965 245 H1065 M965 320 H1035 M965 395 H1080" stroke="#178a67" stroke-width="12" stroke-linecap="round"/>
+  <path d="M870 340 C900 305 910 305 940 340" fill="none" stroke="#178a67" stroke-width="9" stroke-linecap="round"/>
+
+</g>
+</svg>

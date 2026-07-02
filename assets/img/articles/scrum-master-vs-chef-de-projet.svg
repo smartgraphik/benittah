@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title-scrum_master_vs_chef_de_projet desc-scrum_master_vs_chef_de_projet">
+<title id="title-scrum_master_vs_chef_de_projet">Scrum Master vs Chef de Projet : deux rôles, une mission, des approches radicalement différentes</title>
+<desc id="desc-scrum_master_vs_chef_de_projet">Visuel editorial pour Agilité.</desc>
+<defs>
+  <linearGradient id="bg-scrum_master_vs_chef_de_projet" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f5fbf8"/>
+    <stop offset=".58" stop-color="#fffaf4"/>
+    <stop offset="1" stop-color="#d5efe6"/>
+  </linearGradient>
+  <filter id="shadow-scrum_master_vs_chef_de_projet" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2c2014" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg-scrum_master_vs_chef_de_projet)"/>
+
+  <circle cx="1060" cy="120" r="148" fill="#178a67" opacity=".10"/>
+  <circle cx="940" cy="570" r="190" fill="#d5efe6" opacity=".42"/>
+  <circle cx="210" cy="570" r="150" fill="#178a67" opacity=".07"/>
+  <path d="M45 515 C225 430 320 640 520 545 C705 455 805 490 1155 350" fill="none" stroke="#178a67" stroke-width="2" opacity=".18"/>
+  <path d="M70 165 C230 95 320 285 480 210 C650 132 825 152 1115 88" fill="none" stroke="#d5efe6" stroke-width="2" opacity=".38"/>
+
+<rect x="38" y="38" width="1124" height="599" rx="46" fill="#ffffff" opacity=".64" filter="url(#shadow-scrum_master_vs_chef_de_projet)"/>
+<rect x="82" y="86" width="220" height="42" rx="21" fill="#178a67" opacity=".95"/>
+<text x="110" y="114" fill="#fffaf4" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" letter-spacing="1.6">AGILITÉ</text>
+<text x="82" y="177" fill="#178a67" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="2">8 MIN</text>
+<text x="82" y="255" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">Scrum Master vs Chef de</text>
+<text x="82" y="302" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">Projet : deux rôles, une</text>
+<text x="82" y="349" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">mission, des approches</text>
+<text x="82" y="396" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">radicalement différentes</text>
+<text x="86" y="505" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">Deux rôles souvent confondus mais profondément</text>
+<text x="86" y="534" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">différents dans leurs responsabilités.</text>
+<text x="86" y="592" fill="#14221c" opacity=".72" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Cédrick Benittah · Transformation, IA &amp; performance</text>
+<g>
+
+  <circle cx="765" cy="310" r="72" fill="#ffffff" stroke="#178a67" stroke-width="7"/>
+  <circle cx="1035" cy="310" r="72" fill="#ff5a14" stroke="#178a67" stroke-width="7" opacity=".82"/>
+  <path d="M835 310 C895 250 905 250 965 310" fill="none" stroke="#178a67" stroke-width="12" stroke-linecap="round"/>
+  <path d="M735 455 H1065" stroke="#178a67" stroke-width="16" stroke-linecap="round"/>
+  <path d="M780 455 L840 360 L900 455 L960 360 L1020 455" fill="none" stroke="#ff5a14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+</g>
+</svg>

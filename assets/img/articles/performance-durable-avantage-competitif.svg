@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title-performance_durable_avantage_competitif desc-performance_durable_avantage_competitif">
+<title id="title-performance_durable_avantage_competitif">Performance durable : un avantage compétitif à long terme</title>
+<desc id="desc-performance_durable_avantage_competitif">Visuel editorial pour Performance.</desc>
+<defs>
+  <linearGradient id="bg-performance_durable_avantage_competitif" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f7fbf3"/>
+    <stop offset=".58" stop-color="#fffaf4"/>
+    <stop offset="1" stop-color="#d8ecd0"/>
+  </linearGradient>
+  <filter id="shadow-performance_durable_avantage_competitif" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2c2014" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg-performance_durable_avantage_competitif)"/>
+
+  <circle cx="1060" cy="120" r="148" fill="#3f7d4b" opacity=".10"/>
+  <circle cx="940" cy="570" r="190" fill="#d8ecd0" opacity=".42"/>
+  <circle cx="210" cy="570" r="150" fill="#3f7d4b" opacity=".07"/>
+  <path d="M45 515 C225 430 320 640 520 545 C705 455 805 490 1155 350" fill="none" stroke="#3f7d4b" stroke-width="2" opacity=".18"/>
+  <path d="M70 165 C230 95 320 285 480 210 C650 132 825 152 1115 88" fill="none" stroke="#d8ecd0" stroke-width="2" opacity=".38"/>
+
+<rect x="38" y="38" width="1124" height="599" rx="46" fill="#ffffff" opacity=".64" filter="url(#shadow-performance_durable_avantage_competitif)"/>
+<rect x="82" y="86" width="230" height="42" rx="21" fill="#3f7d4b" opacity=".95"/>
+<text x="110" y="114" fill="#fffaf4" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" letter-spacing="1.6">PERFORMANCE</text>
+<text x="82" y="177" fill="#3f7d4b" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="2">6 MIN</text>
+<text x="82" y="255" fill="#172015" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="800">Performance durable : un</text>
+<text x="82" y="308" fill="#172015" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="800">avantage compétitif à long</text>
+<text x="82" y="362" fill="#172015" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="800">terme</text>
+<text x="86" y="505" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">Culture, données et leviers managériaux au</text>
+<text x="86" y="534" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">service de la performance.</text>
+<text x="86" y="592" fill="#172015" opacity=".72" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Cédrick Benittah · Transformation, IA &amp; performance</text>
+<g>
+
+  <path d="M715 470 C800 315 990 315 1080 470" fill="none" stroke="#3f7d4b" stroke-width="14" stroke-linecap="round"/>
+  <path d="M720 470 H1090" stroke="#ff5a14" stroke-width="9" stroke-linecap="round" opacity=".72"/>
+  <circle cx="900" cy="330" r="62" fill="#3f7d4b" opacity=".82"/>
+  <path d="M760 245 C830 200 970 200 1040 245" fill="none" stroke="#ff5a14" stroke-width="7" stroke-linecap="round" opacity=".65"/>
+
+</g>
+</svg>

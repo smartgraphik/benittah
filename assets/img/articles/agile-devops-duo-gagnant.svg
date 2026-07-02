@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title-agile_devops_duo_gagnant desc-agile_devops_duo_gagnant">
+<title id="title-agile_devops_duo_gagnant">Boostez votre équipe avec Agile et DevOps : le duo gagnant pour réussir</title>
+<desc id="desc-agile_devops_duo_gagnant">Visuel editorial pour Agilité &amp; DevOps.</desc>
+<defs>
+  <linearGradient id="bg-agile_devops_duo_gagnant" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f7f5ff"/>
+    <stop offset=".58" stop-color="#fffaf4"/>
+    <stop offset="1" stop-color="#dfd7ff"/>
+  </linearGradient>
+  <filter id="shadow-agile_devops_duo_gagnant" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2c2014" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg-agile_devops_duo_gagnant)"/>
+
+  <circle cx="1060" cy="120" r="148" fill="#6c4ddf" opacity=".10"/>
+  <circle cx="940" cy="570" r="190" fill="#dfd7ff" opacity=".42"/>
+  <circle cx="210" cy="570" r="150" fill="#6c4ddf" opacity=".07"/>
+  <path d="M45 515 C225 430 320 640 520 545 C705 455 805 490 1155 350" fill="none" stroke="#6c4ddf" stroke-width="2" opacity=".18"/>
+  <path d="M70 165 C230 95 320 285 480 210 C650 132 825 152 1115 88" fill="none" stroke="#dfd7ff" stroke-width="2" opacity=".38"/>
+
+<rect x="38" y="38" width="1124" height="599" rx="46" fill="#ffffff" opacity=".64" filter="url(#shadow-agile_devops_duo_gagnant)"/>
+<rect x="82" y="86" width="300" height="42" rx="21" fill="#6c4ddf" opacity=".95"/>
+<text x="110" y="114" fill="#fffaf4" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" letter-spacing="1.6">AGILITÉ &amp; DEVOPS</text>
+<text x="82" y="177" fill="#6c4ddf" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="2">7 MIN</text>
+<text x="82" y="255" fill="#171425" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="800">Boostez votre équipe avec</text>
+<text x="82" y="308" fill="#171425" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="800">Agile et DevOps : le duo</text>
+<text x="82" y="362" fill="#171425" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="800">gagnant pour réussir</text>
+<text x="86" y="505" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">Agile et DevOps fluidifient la collaboration,</text>
+<text x="86" y="534" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">la qualité et la livraison continue.</text>
+<text x="86" y="592" fill="#171425" opacity=".72" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Cédrick Benittah · Transformation, IA &amp; performance</text>
+<g>
+
+  <path d="M785 335 C785 245 910 245 910 335 C910 425 785 425 785 335 Z" fill="none" stroke="#6c4ddf" stroke-width="16"/>
+  <path d="M910 335 C910 245 1035 245 1035 335 C1035 425 910 425 910 335 Z" fill="none" stroke="#00a6a6" stroke-width="16"/>
+  <circle cx="785" cy="335" r="18" fill="#6c4ddf"/>
+  <circle cx="1035" cy="335" r="18" fill="#00a6a6"/>
+  <path d="M750 505 H1070" stroke="#6c4ddf" stroke-width="11" stroke-linecap="round" opacity=".65"/>
+
+</g>
+</svg>

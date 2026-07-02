@@ -1,0 +1,45 @@
+DirectoryIndex index.php index.html
+
+Options -MultiViews
+
+<FilesMatch "^(?:\.|config\.local\.php$|.*\.(?:log|bak|backup|old|orig|tmp|temp|swp))">
+<IfModule mod_authz_core.c>
+Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+Order allow,deny
+Deny from all
+</IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^a-propos\.html$ /cedrick-benittah/ [R=301,L]
+RewriteRule ^accompagnements\.html$ /accompagnements/ [R=301,L]
+RewriteRule ^articles\.html$ /articles/ [R=301,L]
+RewriteRule ^contact\.html$ /contact/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+articles\.php[\s?] [NC]
+RewriteRule ^articles\.php$ /articles/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+accompagnements\.php[\s?] [NC]
+RewriteRule ^accompagnements\.php$ /accompagnements/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+a-propos\.php[\s?] [NC]
+RewriteRule ^a-propos\.php$ /cedrick-benittah/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+cedrick-benittah\.php[\s?] [NC]
+RewriteRule ^cedrick-benittah\.php$ /cedrick-benittah/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+contact\.php[\s?] [NC]
+RewriteRule ^contact\.php$ /contact/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+diagnostic-adoption-ia-transformation\.php[\s?] [NC]
+RewriteRule ^diagnostic-adoption-ia-transformation\.php$ /diagnostic-adoption-ia-transformation/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^articles/([^/]+)/?$ /article.php?slug=$1 [L,QSA]
+</IfModule>

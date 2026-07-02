@@ -1,0 +1,134 @@
+[
+    {
+        "key":  "home",
+        "page":  "Accueil",
+        "slug":  "/",
+        "meta_title":  "Consultant Adoption IA \u0026 Transformation — Cédrick Benittah",
+        "meta_description":  "Passez de l’intention IA à une feuille de route concrète, responsable et adoptée : diagnostic IA, gouvernance IA \u0026 IA Act, priorisation des cas d’usage.",
+        "h1":  "Consultant Adoption IA \u0026 Transformation",
+        "canonical":  "https://benittah.com/",
+        "keywords":  "Cédrick Benittah, consultant adoption IA, consultant transformation IA, diagnostic IA, gouvernance IA, IA Act, feuille de route IA",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "diagnostic",
+        "page":  "Diagnostic IA",
+        "slug":  "/diagnostic-adoption-ia-transformation/",
+        "meta_title":  "Diagnostic Adoption IA \u0026 Transformation — Cédrick Benittah",
+        "meta_description":  "Clarifiez vos cas d’usage IA, sécurisez les risques et repartez avec une roadmap opérationnelle 30 / 60 / 90 jours.",
+        "h1":  "Diagnostic Adoption IA \u0026 Transformation",
+        "canonical":  "https://benittah.com/diagnostic-adoption-ia-transformation/",
+        "keywords":  "diagnostic IA, adoption IA, transformation IA, cas d’usage IA, feuille de route IA, gouvernance IA",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "governance",
+        "page":  "Gouvernance IA \u0026 IA Act",
+        "slug":  "/gouvernance-ia-ia-act/",
+        "meta_title":  "Gouvernance IA \u0026 IA Act | Consultant Adoption IA",
+        "meta_description":  "Accompagnement des dirigeants, DSI et équipes transformation pour structurer une gouvernance IA responsable : IA Act, AI literacy, cartographie des usages, risques et adoption terrain.",
+        "h1":  "Gouvernance IA \u0026 IA Act",
+        "canonical":  "https://benittah.com/gouvernance-ia-ia-act/",
+        "keywords":  "gouvernance IA, IA Act, AI literacy, adoption IA, risques IA, cartographie usages IA",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "pre-diagnostic",
+        "page":  "Évaluer votre besoin IA",
+        "slug":  "/evaluer-mon-besoin-ia/",
+        "meta_title":  "Évaluer votre besoin IA — Cédrick Benittah",
+        "meta_description":  "Répondez à quelques questions pour identifier le format d’accompagnement IA le plus adapté à votre contexte.",
+        "h1":  "Évaluer votre besoin IA",
+        "canonical":  "https://benittah.com/evaluer-mon-besoin-ia/",
+        "keywords":  "pré-diagnostic IA, besoin IA, évaluation IA, accompagnement IA, diagnostic IA",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "merci-pre-diagnostic",
+        "page":  "Merci pré-diagnostic IA",
+        "slug":  "/merci-pre-diagnostic-ia/",
+        "meta_title":  "Merci pour votre demande — Pré-diagnostic IA",
+        "meta_description":  "Votre demande de pré-diagnostic IA a bien été transmise. Vous serez recontacté rapidement.",
+        "h1":  "Merci pour votre demande.",
+        "canonical":  "https://benittah.com/merci-pre-diagnostic-ia/",
+        "keywords":  "pré-diagnostic IA, confirmation demande IA",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "about",
+        "page":  "Cédrick Benittah",
+        "slug":  "/cedrick-benittah/",
+        "meta_title":  "Cédrick Benittah — Consultant Adoption IA \u0026 Transformation",
+        "meta_description":  "Découvrez le parcours de Cédrick Benittah : transformation, adoption IA, gouvernance, agilité, delivery, coaching, certifications et expérience terrain.",
+        "h1":  "Cédrick Benittah",
+        "canonical":  "https://benittah.com/cedrick-benittah/",
+        "keywords":  "Cédrick Benittah, adoption IA, transformation, gouvernance IA, coaching agile, delivery, leadership, certifications",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "services",
+        "page":  "Offres",
+        "slug":  "/accompagnements/",
+        "meta_title":  "Offres — Diagnostic IA, Gouvernance IA \u0026 Adoption",
+        "meta_description":  "Trois accompagnements pour cadrer l’adoption IA : Diagnostic Adoption IA \u0026 Transformation, Gouvernance IA \u0026 IA Act, Accompagnement Adoption IA.",
+        "h1":  "Des interventions pour cadrer, gouverner et adopter l’IA.",
+        "canonical":  "https://benittah.com/accompagnements/",
+        "keywords":  "offres adoption IA, diagnostic IA, gouvernance IA, IA Act, accompagnement IA, transformation IA",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "resources",
+        "page":  "Ressources",
+        "slug":  "/articles/",
+        "meta_title":  "Articles — Adoption IA, Gouvernance \u0026 Transformation",
+        "meta_description":  "Articles et analyses pour éclairer l’adoption IA, la gouvernance, la transformation, l’agilité, le delivery et la performance collective.",
+        "h1":  "Une bibliothèque d’expertise pour transformer avec exigence.",
+        "canonical":  "https://benittah.com/articles/",
+        "keywords":  "articles IA, adoption IA, gouvernance IA, transformation, agilité, delivery, performance collective",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "insights",
+        "page":  "Insights",
+        "slug":  "/articles/",
+        "meta_title":  "Insights — Analyses concrètes sur transformation, IA et performance",
+        "meta_description":  "Des insights opérationnels pour explorer, comprendre et transformer durablement vos organisations.",
+        "h1":  "Explorer. Comprendre. Transformer.",
+        "canonical":  "https://benittah.com/articles/",
+        "keywords":  "insights, tendances, IA, innovation, analyse, performance",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "contact",
+        "page":  "Contact",
+        "slug":  "/contact/",
+        "meta_title":  "Contact — Échangeons sur vos priorités IA",
+        "meta_description":  "Contactez Cédrick Benittah pour un premier échange confidentiel sur vos enjeux d’adoption IA, de transformation ou de gouvernance.",
+        "h1":  "Échangeons sur vos enjeux IA et transformation.",
+        "canonical":  "https://benittah.com/contact/",
+        "keywords":  "contact, diagnostic IA, rendez-vous, adoption IA, gouvernance IA, transformation",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "legal",
+        "page":  "Mentions légales",
+        "slug":  "/mentions-legales/",
+        "meta_title":  "Mentions légales — Cédrick Benittah",
+        "meta_description":  "Mentions légales du site benittah.com.",
+        "h1":  "Mentions légales",
+        "canonical":  "https://benittah.com/mentions-legales/",
+        "keywords":  "mentions légales",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    },
+    {
+        "key":  "privacy",
+        "page":  "Politique de confidentialité",
+        "slug":  "/politique-confidentialite/",
+        "meta_title":  "Politique de confidentialité — Cédrick Benittah",
+        "meta_description":  "Politique de confidentialité et traitement des données personnelles du site benittah.com.",
+        "h1":  "Politique de confidentialité",
+        "canonical":  "https://benittah.com/politique-confidentialite/",
+        "keywords":  "confidentialité, données personnelles, RGPD",
+        "og_image":  "/assets/img/ui/og-image.svg"
+    }
+]

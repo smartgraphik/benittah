@@ -1,0 +1,48 @@
+{
+    "brand":  "Cédrick Benittah",
+    "baseline":  "Consultant Adoption IA \u0026 Transformation",
+    "hero_title":  "Consultant Adoption IA \u0026 Transformation",
+    "hero_script":  "Adoption IA \u0026 Transformation",
+    "hero_subtitle":  "Passez de l’intention IA à une feuille de route concrète, responsable et adoptée par vos équipes.",
+    "hero_cta_primary":  "Demander un diagnostic IA",
+    "hero_cta_secondary":  "Voir la méthode 30/60/90",
+    "calendly_url":  "https://calendly.com/cedrick-benittah/decouverte",
+    "linkedin_url":  "https://www.linkedin.com/in/cedrick-benittah/",
+    "malt_url":  "https://www.malt.fr/profile/cedrickbenittah",
+    "email":  "cedrick@benittah.com",
+    "phone":  "+33651857828",
+    "address":  "Paris · Région PACA · interventions France entière",
+    "portrait_url":  "/assets/img/cedrick-benittah-portrait.png",
+    "portrait_alt":  "Cédrick Benittah, consultant adoption IA et transformation",
+    "logo_url":  "/assets/img/logo-full.png",
+    "logo_signature_url":  "/assets/img/logo-signature.png",
+    "footer_note":  "Consultant Adoption IA \u0026 Transformation : diagnostic IA, gouvernance responsable et adoption terrain.",
+    "company_credit":  "Idée Cédrick Benittah · Réalisation Smartgraphik · SEO Popcorn-SEO",
+    "default_og_image":  "/assets/img/ui/og-image.svg",
+    "stats":  [
+                  {
+                      "value":  "30+",
+                      "label":  "années d’expérience IT, projet et transformation"
+                  },
+                  {
+                      "value":  "150+",
+                      "label":  "équipes accompagnées en environnement complexe"
+                  },
+                  {
+                      "value":  "CAC40",
+                      "label":  "culture grands comptes, delivery et gouvernance"
+                  },
+                  {
+                      "value":  "IA",
+                      "label":  "cas d’usage, automatisation et adoption responsable"
+                  }
+              ],
+    "trust_items":  [
+                        "Coach Pro",
+                        "SAFe SPC 6",
+                        "DevOps Foundation",
+                        "Préparation mentale",
+                        "Adoption IA"
+                    ],
+    "site_url":  "https://benittah.com"
+}

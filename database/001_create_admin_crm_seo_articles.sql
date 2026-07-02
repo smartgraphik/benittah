@@ -1,0 +1,96 @@
+CREATE TABLE IF NOT EXISTS admin_users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(190) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  role VARCHAR(50) DEFAULT 'admin',
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS leads_diagnostic_ia (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NULL,
+  source_page VARCHAR(255) NULL,
+  source_offre VARCHAR(100) NULL,
+  nom VARCHAR(190) NOT NULL,
+  entreprise VARCHAR(190) NULL,
+  email VARCHAR(190) NOT NULL,
+  telephone VARCHAR(80) NULL,
+  role_contact VARCHAR(120) NULL,
+  niveau_ia VARCHAR(190) NULL,
+  besoin_principal VARCHAR(190) NULL,
+  perimetre VARCHAR(190) NULL,
+  horizon VARCHAR(190) NULL,
+  budget VARCHAR(190) NULL,
+  message TEXT NULL,
+  consentement_rgpd TINYINT(1) NOT NULL DEFAULT 0,
+  ip_hash VARCHAR(255) NULL,
+  user_agent VARCHAR(255) NULL,
+  statut VARCHAR(80) NOT NULL DEFAULT 'Nouveau',
+  note_interne TEXT NULL,
+  date_relance DATE NULL,
+  INDEX idx_leads_statut (statut),
+  INDEX idx_leads_offre (source_offre),
+  INDEX idx_leads_created_at (created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS articles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NULL,
+  published_at DATETIME NULL,
+  status VARCHAR(30) NOT NULL DEFAULT 'draft',
+  title VARCHAR(255) NOT NULL,
+  slug VARCHAR(255) NOT NULL UNIQUE,
+  excerpt TEXT NULL,
+  content LONGTEXT NOT NULL,
+  category VARCHAR(120) NULL,
+  cover_image VARCHAR(255) NULL,
+  meta_title VARCHAR(255) NULL,
+  meta_description VARCHAR(320) NULL,
+  canonical_url VARCHAR(255) NULL,
+  noindex TINYINT(1) NOT NULL DEFAULT 0,
+  INDEX idx_articles_status (status),
+  INDEX idx_articles_published_at (published_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS seo_pages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NULL,
+  page_path VARCHAR(255) NOT NULL UNIQUE,
+  page_label VARCHAR(255) NULL,
+  meta_title VARCHAR(255) NULL,
+  meta_description VARCHAR(320) NULL,
+  canonical_url VARCHAR(255) NULL,
+  robots VARCHAR(80) DEFAULT 'index, follow',
+  og_title VARCHAR(255) NULL,
+  og_description VARCHAR(320) NULL,
+  og_image VARCHAR(255) NULL,
+  sitemap_include TINYINT(1) NOT NULL DEFAULT 1,
+  sitemap_priority DECIMAL(2,1) DEFAULT 0.8,
+  sitemap_changefreq VARCHAR(50) DEFAULT 'monthly'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO seo_pages
+  (page_path, page_label, meta_title, meta_description, canonical_url, sitemap_priority, sitemap_changefreq)
+VALUES
+  ('/', 'Accueil', 'Consultant Adoption IA & Transformation — Cédrick Benittah', 'Passez de l’intention IA à une feuille de route concrète, responsable et adoptée.', 'https://benittah.com/', 1.0, 'monthly'),
+  ('/cedrick-benittah/', 'Cédrick Benittah', 'Cédrick Benittah — Transformation, IA, agilité & performance', 'Parcours, expertises et prises de parole de Cédrick Benittah.', 'https://benittah.com/cedrick-benittah/', 0.8, 'monthly'),
+  ('/diagnostic-adoption-ia-transformation/', 'Diagnostic IA', 'Diagnostic Adoption IA & Transformation — Cédrick Benittah', 'Clarifiez vos cas d’usage IA, sécurisez les risques et repartez avec une roadmap opérationnelle 30 / 60 / 90 jours.', 'https://benittah.com/diagnostic-adoption-ia-transformation/', 1.0, 'monthly'),
+  ('/gouvernance-ia-ia-act/', 'Gouvernance IA & IA Act', 'Gouvernance IA & IA Act | Consultant Adoption IA', 'Accompagnement des dirigeants, DSI et équipes transformation pour structurer une gouvernance IA responsable.', 'https://benittah.com/gouvernance-ia-ia-act/', 0.9, 'monthly'),
+  ('/evaluer-mon-besoin-ia/', 'Évaluer votre besoin IA', 'Évaluer votre besoin IA — Cédrick Benittah', 'Répondez à quelques questions pour identifier le format d’accompagnement IA le plus adapté à votre contexte.', 'https://benittah.com/evaluer-mon-besoin-ia/', 0.9, 'monthly'),
+  ('/merci-pre-diagnostic-ia/', 'Merci pré-diagnostic IA', 'Merci pour votre demande — Pré-diagnostic IA', 'Votre demande de pré-diagnostic IA a bien été transmise.', 'https://benittah.com/merci-pre-diagnostic-ia/', 0.6, 'monthly'),
+  ('/articles/', 'Articles', 'Articles — Adoption IA, Gouvernance & Transformation', 'Articles et analyses pour éclairer l’adoption IA, la gouvernance, la transformation, l’agilité et le delivery.', 'https://benittah.com/articles/', 0.8, 'monthly'),
+  ('/contact/', 'Contact', 'Contact — Échangeons sur vos ambitions de transformation', 'Contactez Cédrick Benittah pour un premier échange confidentiel.', 'https://benittah.com/contact/', 0.8, 'monthly'),
+  ('/mentions-legales/', 'Mentions légales', 'Mentions légales — Cédrick Benittah', 'Mentions légales du site benittah.com.', 'https://benittah.com/mentions-legales/', 0.4, 'monthly'),
+  ('/politique-confidentialite/', 'Politique de confidentialité', 'Politique de confidentialité — Cédrick Benittah', 'Politique de confidentialité et traitement des données personnelles.', 'https://benittah.com/politique-confidentialite/', 0.4, 'monthly')
+ON DUPLICATE KEY UPDATE
+  page_label = VALUES(page_label),
+  meta_title = VALUES(meta_title),
+  meta_description = VALUES(meta_description),
+  canonical_url = VALUES(canonical_url),
+  sitemap_priority = VALUES(sitemap_priority),
+  sitemap_changefreq = VALUES(sitemap_changefreq);
+

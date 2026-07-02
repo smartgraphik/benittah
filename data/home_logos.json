@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Orange",
+    "logo": "/assets/img/logos/orange.png",
+    "enabled": true
+  },
+  {
+    "name": "Swiss Life Banque Privée",
+    "logo": "/assets/img/logos/swiss-life-banque-privee.png",
+    "enabled": true
+  },
+  {
+    "name": "BNP Paribas Cardif",
+    "logo": "/assets/img/logos/bnp-paribas-cardif.jpg",
+    "enabled": true
+  },
+  {
+    "name": "Mykelson Consulting",
+    "logo": "/assets/img/logos/mykelson-consulting.jpg",
+    "enabled": true
+  },
+  {
+    "name": "Abylsen",
+    "logo": "/assets/img/logos/abylsen.png",
+    "enabled": true
+  },
+  {
+    "name": "Wemanity",
+    "logo": "/assets/img/logos/wemanity.png",
+    "enabled": true
+  },
+  {
+    "name": "Groupe SII",
+    "logo": "/assets/img/logos/sii.png",
+    "enabled": true
+  },
+  {
+    "name": "Capgemini Altran",
+    "logo": "/assets/img/logos/altran.png",
+    "enabled": true
+  },
+  {
+    "name": "Cegid",
+    "logo": "/assets/img/logos/cegid.png",
+    "enabled": true
+  },
+  {
+    "name": "Davidson Consulting",
+    "logo": "/assets/img/logos/davidson.png",
+    "enabled": true
+  },
+  {
+    "name": "GE HealthCare",
+    "logo": "/assets/img/logos/ge-healthcare.png",
+    "enabled": true
+  },
+  {
+    "name": "Siemens",
+    "logo": "/assets/img/logos/siemens.jpg",
+    "enabled": true
+  },
+  {
+    "name": "Schneider Electric",
+    "logo": "/assets/img/logos/schneider-electric.png",
+    "enabled": true
+  },
+  {
+    "name": "Navya",
+    "logo": "/assets/img/logos/navya.jpg",
+    "enabled": true
+  },
+  {
+    "name": "HP",
+    "logo": "/assets/img/logos/hp.png",
+    "enabled": true
+  },
+  {
+    "name": "IBM",
+    "logo": "/assets/img/logos/ibm.png",
+    "enabled": true
+  },
+  {
+    "name": "Takara",
+    "logo": "/assets/img/logos/takara.jpg",
+    "enabled": true
+  },
+  {
+    "name": "Star Croisières",
+    "logo": "/assets/img/logos/star-croisieres.png",
+    "enabled": true
+  },
+  {
+    "name": "Compaq",
+    "logo": "/assets/img/logos/compaq.png",
+    "enabled": true
+  }
+]

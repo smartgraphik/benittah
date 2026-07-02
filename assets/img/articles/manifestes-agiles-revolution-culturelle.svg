@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title-manifestes_agiles_revolution_culturelle desc-manifestes_agiles_revolution_culturelle">
+<title id="title-manifestes_agiles_revolution_culturelle">Les Manifestes Agiles : une révolution culturelle pour l’entreprise du XXIe siècle</title>
+<desc id="desc-manifestes_agiles_revolution_culturelle">Visuel editorial pour Agilité.</desc>
+<defs>
+  <linearGradient id="bg-manifestes_agiles_revolution_culturelle" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f5fbf8"/>
+    <stop offset=".58" stop-color="#fffaf4"/>
+    <stop offset="1" stop-color="#d5efe6"/>
+  </linearGradient>
+  <filter id="shadow-manifestes_agiles_revolution_culturelle" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2c2014" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg-manifestes_agiles_revolution_culturelle)"/>
+
+  <circle cx="1060" cy="120" r="148" fill="#178a67" opacity=".10"/>
+  <circle cx="940" cy="570" r="190" fill="#d5efe6" opacity=".42"/>
+  <circle cx="210" cy="570" r="150" fill="#178a67" opacity=".07"/>
+  <path d="M45 515 C225 430 320 640 520 545 C705 455 805 490 1155 350" fill="none" stroke="#178a67" stroke-width="2" opacity=".18"/>
+  <path d="M70 165 C230 95 320 285 480 210 C650 132 825 152 1115 88" fill="none" stroke="#d5efe6" stroke-width="2" opacity=".38"/>
+
+<rect x="38" y="38" width="1124" height="599" rx="46" fill="#ffffff" opacity=".64" filter="url(#shadow-manifestes_agiles_revolution_culturelle)"/>
+<rect x="82" y="86" width="220" height="42" rx="21" fill="#178a67" opacity=".95"/>
+<text x="110" y="114" fill="#fffaf4" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" letter-spacing="1.6">AGILITÉ</text>
+<text x="82" y="177" fill="#178a67" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="2">7 MIN</text>
+<text x="82" y="255" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">Les Manifestes Agiles :</text>
+<text x="82" y="302" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">une révolution culturelle</text>
+<text x="82" y="349" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">pour l’entreprise du XXIe</text>
+<text x="82" y="396" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">siècle</text>
+<text x="86" y="505" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">Le Manifeste Agile comme tournant culturel</text>
+<text x="86" y="534" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">dans le travail d’équipe et le développement...</text>
+<text x="86" y="592" fill="#14221c" opacity=".72" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Cédrick Benittah · Transformation, IA &amp; performance</text>
+<g>
+<rect x="720" y="175" width="130" height="180" rx="18" fill="#ffffff" opacity=".78" transform="rotate(-7 785 265)"/>
+<path d="M748 230 H825 M748 263 H812 M748 296 H820" stroke="#178a67" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+<rect x="815" y="220" width="130" height="180" rx="18" fill="#ffffff" opacity=".78" transform="rotate(5 880 310)"/>
+<path d="M843 275 H920 M843 308 H907 M843 341 H915" stroke="#178a67" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+<rect x="910" y="165" width="130" height="180" rx="18" fill="#ffffff" opacity=".78" transform="rotate(-4 975 255)"/>
+<path d="M938 220 H1015 M938 253 H1002 M938 286 H1010" stroke="#178a67" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+<rect x="990" y="245" width="130" height="180" rx="18" fill="#ffffff" opacity=".78" transform="rotate(8 1055 335)"/>
+<path d="M1018 300 H1095 M1018 333 H1082 M1018 366 H1090" stroke="#178a67" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+<circle cx="1005" cy="470" r="58" fill="#ff5a14" opacity=".8"/>
+</g>
+</svg>

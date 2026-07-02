@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Gouvernance IA & IA Act">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf4"/><stop offset="1" stop-color="#fff0e5"/></linearGradient>
+    <linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7a16"/><stop offset="1" stop-color="#ff5a14"/></linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#2c2014" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#g)"/>
+  <path d="M0 560 C220 470 330 660 560 548 S915 340 1200 420 V720 H0Z" fill="#fff" opacity=".65"/>
+  <circle cx="935" cy="170" r="180" fill="#ff5a14" opacity=".12"/>
+  <g filter="url(#s)">
+    <rect x="180" y="190" width="840" height="340" rx="36" fill="#ffffff" opacity=".82" stroke="#eaded1"/>
+    <path d="M320 330c70-90 180-90 250 0s180 90 250 0" fill="none" stroke="url(#o)" stroke-width="22" stroke-linecap="round"/><path d="M320 330c70 90 180 90 250 0s180-90 250 0" fill="none" stroke="url(#o)" stroke-width="22" stroke-linecap="round" opacity=".45"/>
+  </g>
+  <text x="220" y="470" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#ff5a14" letter-spacing="4">BENITTAH.COM</text>
+  <text x="220" y="510" font-family="Georgia, serif" font-size="46" font-weight="600" fill="#151311">Gouvernance IA & IA Act</text>
+</svg>

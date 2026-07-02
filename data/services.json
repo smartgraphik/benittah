@@ -1,0 +1,98 @@
+[
+    {
+        "slug":  "diagnostic-adoption-ia-transformation",
+        "title":  "Diagnostic Adoption IA \u0026 Transformation",
+        "kicker":  "Cadrage",
+        "excerpt":  "Clarifier les cas d’usage IA, les risques, les priorités et la feuille de route 30 / 60 / 90 jours.",
+        "icon":  "01",
+        "priority":  10,
+        "image":  "/assets/img/architecture-hero.webp",
+        "bullets":  [
+                        "Entretiens ciblés avec les parties prenantes",
+                        "Cartographie des opportunités, risques et irritants",
+                        "Matrice valeur / faisabilité / risque",
+                        "Roadmap 30 / 60 / 90 jours exploitable"
+                    ],
+        "problems":  [
+                         "Initiatives IA dispersées",
+                         "Priorités difficiles à arbitrer",
+                         "Risques data, humains ou conformité à clarifier"
+                     ],
+        "outcomes":  [
+                         "Cas d’usage IA priorisés",
+                         "Risques rendus lisibles",
+                         "Feuille de route concrète à 30 / 60 / 90 jours"
+                     ],
+        "formats":  [
+                        "2 à 3 entretiens ciblés",
+                        "Atelier de priorisation",
+                        "Restitution dirigeant ou comité projet"
+                    ],
+        "seo_title":  "Diagnostic Adoption IA \u0026 Transformation — Cédrick Benittah",
+        "seo_description":  "Clarifiez vos cas d’usage IA, sécurisez les risques et repartez avec une roadmap opérationnelle 30 / 60 / 90 jours."
+    },
+    {
+        "slug":  "gouvernance-ia-ia-act",
+        "title":  "Gouvernance IA \u0026 IA Act",
+        "kicker":  "Responsable \u0026 conforme",
+        "excerpt":  "Structurer un cadre d’usage responsable de l’IA : sensibilisation, AI literacy, cartographie des usages, risques, règles internes et bonnes pratiques d’adoption.",
+        "icon":  "02",
+        "priority":  20,
+        "image":  "/assets/img/architecture-courbe.webp",
+        "bullets":  [
+                        "Cartographie des usages IA existants ou envisagés",
+                        "Identification des risques métiers, humains, données et conformité",
+                        "Règles internes d’usage de l’IA",
+                        "Plan d’action et support de restitution"
+                    ],
+        "problems":  [
+                         "Usages IA non cadrés",
+                         "Questions sur l’IA Act, les données et la responsabilité",
+                         "Besoin d’un langage commun avec les équipes"
+                     ],
+        "outcomes":  [
+                         "Cadre d’usage plus clair",
+                         "Risques mieux identifiés",
+                         "Adoption IA plus maîtrisée"
+                     ],
+        "formats":  [
+                        "Cartographie des usages",
+                        "Atelier gouvernance IA",
+                        "Sensibilisation AI literacy"
+                    ],
+        "seo_title":  "Gouvernance IA \u0026 IA Act | Consultant Adoption IA",
+        "seo_description":  "Structurez une gouvernance IA responsable : IA Act, AI literacy, cartographie des usages, risques, règles internes et adoption terrain."
+    },
+    {
+        "slug":  "acculturation-ia",
+        "title":  "Accompagnement Adoption IA",
+        "kicker":  "Adoption terrain",
+        "excerpt":  "Passer du diagnostic à l’expérimentation terrain : ateliers métiers, priorisation des cas d’usage, conduite du changement et adoption opérationnelle.",
+        "icon":  "03",
+        "priority":  30,
+        "image":  "/assets/img/architecture-escalier.webp",
+        "bullets":  [
+                        "Ateliers métiers orientés problèmes réels",
+                        "Priorisation des cas d’usage à tester",
+                        "Accompagnement des managers et équipes",
+                        "Boucles de feedback pour ancrer les apprentissages"
+                    ],
+        "problems":  [
+                         "Outils IA testés individuellement",
+                         "Faible intégration aux processus métiers",
+                         "Équipes curieuses mais dispersées"
+                     ],
+        "outcomes":  [
+                         "Cas d’usage concrets reliés au quotidien des équipes",
+                         "Expérimentations mieux priorisées",
+                         "Adoption opérationnelle plus durable"
+                     ],
+        "formats":  [
+                        "Ateliers métiers",
+                        "Accompagnement 90 jours",
+                        "Rituels de feedback et d’adoption"
+                    ],
+        "seo_title":  "Accompagnement Adoption IA — Cédrick Benittah",
+        "seo_description":  "Passez du diagnostic IA à l’expérimentation terrain avec un accompagnement des cas d’usage, des managers et des équipes."
+    }
+]

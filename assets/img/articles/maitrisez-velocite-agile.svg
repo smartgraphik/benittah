@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title-maitrisez_velocite_agile desc-maitrisez_velocite_agile">
+<title id="title-maitrisez_velocite_agile">Maîtrisez la vélocité : le secret pour accélérer sans brûler les ailes en agilité</title>
+<desc id="desc-maitrisez_velocite_agile">Visuel editorial pour Agilité.</desc>
+<defs>
+  <linearGradient id="bg-maitrisez_velocite_agile" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f5fbf8"/>
+    <stop offset=".58" stop-color="#fffaf4"/>
+    <stop offset="1" stop-color="#d5efe6"/>
+  </linearGradient>
+  <filter id="shadow-maitrisez_velocite_agile" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#2c2014" flood-opacity=".13"/>
+  </filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg-maitrisez_velocite_agile)"/>
+
+  <circle cx="1060" cy="120" r="148" fill="#178a67" opacity=".10"/>
+  <circle cx="940" cy="570" r="190" fill="#d5efe6" opacity=".42"/>
+  <circle cx="210" cy="570" r="150" fill="#178a67" opacity=".07"/>
+  <path d="M45 515 C225 430 320 640 520 545 C705 455 805 490 1155 350" fill="none" stroke="#178a67" stroke-width="2" opacity=".18"/>
+  <path d="M70 165 C230 95 320 285 480 210 C650 132 825 152 1115 88" fill="none" stroke="#d5efe6" stroke-width="2" opacity=".38"/>
+
+<rect x="38" y="38" width="1124" height="599" rx="46" fill="#ffffff" opacity=".64" filter="url(#shadow-maitrisez_velocite_agile)"/>
+<rect x="82" y="86" width="220" height="42" rx="21" fill="#178a67" opacity=".95"/>
+<text x="110" y="114" fill="#fffaf4" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900" letter-spacing="1.6">AGILITÉ</text>
+<text x="82" y="177" fill="#178a67" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900" letter-spacing="2">7 MIN</text>
+<text x="82" y="255" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">Maîtrisez la vélocité : le</text>
+<text x="82" y="302" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">secret pour accélérer sans</text>
+<text x="82" y="349" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">brûler les ailes en</text>
+<text x="82" y="396" fill="#14221c" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="800">agilité</text>
+<text x="86" y="505" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">La vélocité agile comme repère d’apprentissage</text>
+<text x="86" y="534" fill="#51473e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">et non comme outil de pression.</text>
+<text x="86" y="592" fill="#14221c" opacity=".72" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Cédrick Benittah · Transformation, IA &amp; performance</text>
+<g>
+<rect x="705" y="425" width="38" height="80" rx="14" fill="#ff5a14" opacity=".75"/>
+<rect x="767" y="383" width="38" height="122" rx="14" fill="#178a67" opacity=".75"/>
+<rect x="829" y="413" width="38" height="92" rx="14" fill="#ff5a14" opacity=".75"/>
+<rect x="891" y="335" width="38" height="170" rx="14" fill="#178a67" opacity=".75"/>
+<rect x="953" y="360" width="38" height="145" rx="14" fill="#ff5a14" opacity=".75"/>
+<rect x="1015" y="290" width="38" height="215" rx="14" fill="#178a67" opacity=".75"/>
+<path d="M700 230 C790 350 880 170 1085 245" fill="none" stroke="#178a67" stroke-width="13" stroke-linecap="round"/><path d="M1048 220 L1090 246 L1044 268" fill="none" stroke="#178a67" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
