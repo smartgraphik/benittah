@@ -1,0 +1,18 @@
+Changement V6 — URL Cédrick Benittah
+
+La page /a-propos/ a été remplacée par /cedrick-benittah/ pour un libellé plus personnel et plus SEO.
+
+Modifications effectuées :
+- création de /cedrick-benittah/
+- création de cedrick-benittah.php
+- redirection 301 de /a-propos/ vers /cedrick-benittah/
+- redirection 301 de /a-propos.php vers /cedrick-benittah/
+- mise à jour de la navigation header/footer
+- mise à jour du lien depuis la home
+- mise à jour des canonical URLs
+- mise à jour de sitemap.xml
+- mise à jour de data/pages_seo.json
+
+À tester après upload :
+https://benittah.com/cedrick-benittah/
+https://benittah.com/a-propos/ doit rediriger vers /cedrick-benittah/

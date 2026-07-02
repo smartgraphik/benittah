@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /data/
+Disallow: /php8-check.php
+Sitemap: https://benittah.com/sitemap.xml

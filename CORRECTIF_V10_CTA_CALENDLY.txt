@@ -1,0 +1,13 @@
+Correctif V10 — CTA Calendly
+
+Modifications réalisées :
+- Mise à jour de data/site.json : calendly_url = https://calendly.com/cedrick-benittah/decouverte
+- Mise à jour du CTA du header : Prendre rendez-vous
+- Mise à jour du CTA secondaire de la home : Prendre rendez-vous
+- Mise à jour du CTA final de la home : Prendre rendez-vous
+- Mise à jour du CTA de la page contact : utilisation du nouveau lien Calendly via site.json
+- Mise à jour des CTA des pages accompagnements détail : lien direct vers Calendly
+
+Non modifié :
+- Les liens de navigation internes : Accueil, Cédrick Benittah, Accompagnements, Articles, Contact.
+- Les liens de découverte de contenus : Découvrir, Voir les articles, Retour aux articles.

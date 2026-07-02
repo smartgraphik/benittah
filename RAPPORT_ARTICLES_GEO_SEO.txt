@@ -1,0 +1,17 @@
+BENITTAH.COM — VERSION ARTICLES GEO/SEO
+
+Travail réalisé :
+- Reprise des 26 articles existants depuis data/articles.json.
+- Enrichissement de chaque article avec un pilier éditorial : IA & Adoption, Transformation & Performance, Agilité & DevOps, Leadership & Coaching, Lectures & Inspirations.
+- Ajout d’un bloc « À retenir » par article.
+- Ajout d’un CTA contextualisé selon le sujet de l’article.
+- Ajout d’un maillage interne automatique dans le contenu : diagnostic IA, accompagnements, articles connexes.
+- Ajout d’une section « Pour aller plus loin » avec 3 articles liés.
+- Ajout de données structurées Schema.org Article et BreadcrumbList sur chaque article.
+- Ajout d’une page offre : /diagnostic-adoption-ia-transformation/.
+- Ajout de la page Diagnostic IA dans la navigation.
+- Mise à jour sitemap.xml avec l’offre Diagnostic IA et les articles.
+- Mise à jour llms.txt pour les moteurs IA / GEO.
+- Conservation de l’admin existant et protection des champs GEO/SEO lors de la sauvegarde des articles.
+
+Objectif : transformer les articles en bibliothèque d’expertise, au service de l’offre principale « Diagnostic Adoption IA & Transformation ».

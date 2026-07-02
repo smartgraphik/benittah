@@ -1,0 +1,22 @@
+Correctif V9 — page d'accueil benittah.com
+
+Base conservée : V6/V8.
+Objectif : modifier uniquement le hero de la page d'accueil.
+
+Fichiers modifiés :
+- index.php
+  - remplacement de la deuxième carte : Posture / Valeur / Exécution devient Transformation / IA / Résultats.
+
+- assets/css/style.css
+  - centrage horizontal des deux cartes du hero.
+  - carte principale plus premium, centrée sous le portrait.
+  - seconde carte plus fine, alignée sous la première.
+  - maintien de la photo issue du ZIP.
+  - adaptation mobile/tablette.
+
+Non modifié :
+- structure SEO multi-pages.
+- fichiers services/articles/admin.
+- navigation.
+- contenu des autres pages.
+- configuration PHP 8.

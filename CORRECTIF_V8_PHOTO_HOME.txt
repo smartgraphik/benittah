@@ -1,0 +1,19 @@
+Correctif V8 — photo page d'accueil
+
+Base utilisée : V6 Cedrick Benittah PHP 8.
+
+Modification volontairement limitée à la page d'accueil :
+- aucun changement de structure SEO ;
+- aucun changement de contenu ;
+- aucun changement de navigation ;
+- aucun changement des pages internes ;
+- aucun changement PHP fonctionnel.
+
+Fichier modifié :
+- assets/css/style.css
+
+Correction appliquée :
+- photo du hero légèrement réduite ;
+- carte "Transformation" déplacée en bas à gauche ;
+- carte "Posture / Valeur / Exécution" repositionnée ;
+- le visage n'est plus recouvert par les cartes.

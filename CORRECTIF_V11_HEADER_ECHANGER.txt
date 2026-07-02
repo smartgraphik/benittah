@@ -1,0 +1,9 @@
+Correctif V11 — Header Échanger
+
+Modification réalisée :
+- Bouton du header conservé/libellé : Échanger
+- Lien du bouton header vers : https://calendly.com/cedrick-benittah/decouverte
+- Aucun changement de design, de home, de SEO ou de structure.
+
+Fichier modifié :
+- includes/header.php

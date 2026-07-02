@@ -1,0 +1,21 @@
+CONFIGURATION PHP 8 — IONOS
+
+Cette version du site benittah.com est prévue pour PHP 8.0 ou supérieur.
+Recommandation : PHP 8.2, PHP 8.3 ou PHP 8.4 selon les versions disponibles dans le contrat IONOS.
+
+Méthode recommandée chez IONOS :
+1. Se connecter à l’espace client IONOS.
+2. Menu > Hébergement.
+3. Ouvrir la tuile PHP / Paramètres PHP.
+4. Sélectionner le domaine benittah.com.
+5. Choisir PHP 8.x.
+6. Enregistrer.
+
+Important :
+- Ne pas forcer PHP 8 via .htaccess.
+- Conserver le .htaccess fourni uniquement pour les redirections propres et la protection des fichiers privés.
+- En cas de HTTP ERROR 500, tester d’abord les directives .htaccess avec les logs IONOS avant de supprimer les protections.
+
+Diagnostic :
+- Après upload, ouvrir temporairement : https://benittah.com/php8-check.php
+- Si la page indique PHP 8 ou supérieur, supprimer ensuite php8-check.php du serveur.

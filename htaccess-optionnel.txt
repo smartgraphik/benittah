@@ -1,0 +1,19 @@
+# benittah.com - optionnel
+# Le site V5 fonctionne SANS .htaccess grâce aux dossiers /articles/, /accompagnements/, /contact/, etc.
+# À ne pas renommer tant que le site fonctionne correctement sur IONOS.
+
+DirectoryIndex index.php index.html
+
+# Redirections legacy optionnelles, uniquement si mod_rewrite est bien supporté chez l'hébergeur.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{THE_REQUEST} \s/+articles\.php[\s?] [NC]
+RewriteRule ^articles\.php$ /articles/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+accompagnements\.php[\s?] [NC]
+RewriteRule ^accompagnements\.php$ /accompagnements/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+a-propos\.php[\s?] [NC]
+RewriteRule ^a-propos\.php$ /cedrick-benittah/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+contact\.php[\s?] [NC]
+RewriteRule ^contact\.php$ /contact/ [R=301,L]
+</IfModule>

@@ -1,0 +1,31 @@
+Architecture SEO retenue pour benittah.com
+
+1. Home
+https://benittah.com/
+
+2. Pages institutionnelles
+https://benittah.com/cedrick-benittah/
+https://benittah.com/contact/
+
+3. Page mère Accompagnements
+https://benittah.com/accompagnements/
+
+4. Pages SEO services
+https://benittah.com/accompagnements/conseil-transformation/
+https://benittah.com/accompagnements/acculturation-ia/
+https://benittah.com/accompagnements/coaching-performance/
+https://benittah.com/accompagnements/conferences-ateliers/
+https://benittah.com/accompagnements/devops-performance/
+https://benittah.com/accompagnements/ateliers-formations/
+
+5. Hub articles
+https://benittah.com/articles/
+
+6. Articles
+Chaque article dispose de sa propre URL :
+https://benittah.com/articles/slug-de-l-article/
+
+7. Sitemap
+https://benittah.com/sitemap.xml
+
+Cette structure évite le one-page et renforce le maillage interne, les H1 dédiés, les title/meta descriptions et l'indexation par intention de recherche.
