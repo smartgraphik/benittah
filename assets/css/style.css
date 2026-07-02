@@ -613,3 +613,83 @@ img{max-width:100%;display:block}
     grid-template-columns:1fr;
   }
 }
+.form-section{
+  display:grid;
+  gap:16px;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+}
+.form-section h3{
+  margin:0;
+  font-family:var(--title);
+  font-size:26px;
+  line-height:1.15;
+  color:#2b211b;
+}
+.checkbox-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.choice-card{
+  display:flex!important;
+  grid-template-columns:none!important;
+  flex-direction:row;
+  gap:10px!important;
+  align-items:flex-start;
+  min-height:64px;
+  padding:14px 16px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:#fff;
+  color:#3a3029!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  font-size:14px!important;
+  line-height:1.35;
+}
+.choice-card input{
+  width:auto;
+  margin-top:3px;
+}
+.result-score-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+  margin:28px 0;
+}
+.result-score-card{
+  display:grid;
+  gap:8px;
+}
+.result-score-card span{
+  font-family:var(--title);
+  font-size:42px;
+  line-height:1;
+  color:var(--orange);
+}
+.result-score-card strong{
+  font-size:18px;
+  color:#2b211b;
+}
+.result-score-card p{
+  margin:0;
+}
+.result-recommendation{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.result-recommendation h2{
+  margin-bottom:12px;
+}
+@media(max-width:900px){
+  .result-score-grid,
+  .checkbox-grid{
+    grid-template-columns:1fr;
+  }
+  .result-recommendation{
+    display:grid;
+  }
+}

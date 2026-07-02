@@ -50,24 +50,54 @@ function send_with_phpmailer_if_available($to, $subject, $body) {
 
 function send_lead_notification($leadId, $lead) {
   $to = defined('ADMIN_NOTIFICATION_EMAIL') && ADMIN_NOTIFICATION_EMAIL ? ADMIN_NOTIFICATION_EMAIL : 'cedrick@benittah.com';
+  $prenom = $lead['prenom'] ?? '';
   $nom = $lead['nom'] ?? '';
+  $fullName = trim($prenom . ' ' . $nom);
+  if ($fullName === '') { $fullName = $nom; }
   $entreprise = $lead['entreprise'] ?? '';
-  $subject = 'Nouveau pré-diagnostic IA — ' . $nom . ' — ' . ($entreprise ?: 'Sans entreprise');
+  $offre = $lead['offre_recommandee'] ?? ($lead['source_offre'] ?? 'Pré-diagnostic IA');
+  $subject = 'Nouveau diagnostic IA — ' . $offre . ' — ' . ($fullName ?: 'Prospect');
   $adminLink = app_url('/admin/leads/view.php?id=' . (int)$leadId);
+
+  $raw = array();
+  if (!empty($lead['raw_answers_json'])) {
+    $decoded = json_decode($lead['raw_answers_json'], true);
+    if (is_array($decoded)) { $raw = $decoded; }
+  }
+  $objectifs = array();
+  if (!empty($raw['objectifs_business']) && is_array($raw['objectifs_business'])) {
+    $objectifs = $raw['objectifs_business'];
+  } elseif (!empty($lead['besoin_principal'])) {
+    $objectifs = array($lead['besoin_principal']);
+  }
+
   $lines = array(
+    'Nouveau diagnostic IA qualifié',
     'Date : ' . date('Y-m-d H:i:s'),
-    'Offre d’origine : ' . ($lead['source_offre'] ?? ''),
+    '',
+    'Identité',
+    'Prénom : ' . $prenom,
     'Nom : ' . $nom,
     'Entreprise : ' . $entreprise,
     'Email : ' . ($lead['email'] ?? ''),
     'Téléphone : ' . ($lead['telephone'] ?? ''),
-    'Rôle : ' . ($lead['role_contact'] ?? ''),
-    'Niveau IA : ' . ($lead['niveau_ia'] ?? ''),
-    'Besoin principal : ' . ($lead['besoin_principal'] ?? ''),
-    'Périmètre : ' . ($lead['perimetre'] ?? ''),
-    'Horizon : ' . ($lead['horizon'] ?? ''),
-    'Budget : ' . ($lead['budget'] ?? ''),
-    'Message :',
+    'Fonction : ' . ($lead['role_contact'] ?? ''),
+    'Taille : ' . ($lead['taille_entreprise'] ?? ''),
+    'Secteur : ' . ($lead['secteur_activite'] ?? ''),
+    '',
+    'Qualification',
+    'Offre recommandée : ' . $offre,
+    'Maturité IA : ' . ($lead['score_maturite_ia'] ?? '') . '/100 — ' . ($lead['niveau_maturite'] ?? ''),
+    'Gouvernance / risque : ' . ($lead['score_gouvernance_risque'] ?? '') . '/100 — ' . ($lead['niveau_risque'] ?? ''),
+    'Opportunité business : ' . ($lead['score_opportunite_business'] ?? '') . '/100 — ' . ($lead['niveau_opportunite'] ?? ''),
+    'Urgence : ' . ($lead['score_urgence'] ?? '') . '/100 — ' . ($lead['niveau_urgence'] ?? ''),
+    '',
+    'Objectifs déclarés : ' . ($objectifs ? implode(', ', $objectifs) : 'Non renseigné'),
+    '',
+    'Résumé de recommandation :',
+    $lead['explication_recommandation'] ?? '',
+    '',
+    'Message prospect :',
     $lead['message'] ?? '',
     '',
     'Fiche lead : ' . $adminLink,
@@ -83,4 +113,3 @@ function send_lead_notification($leadId, $lead) {
   }
   return $sent;
 }
-

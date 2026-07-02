@@ -25,7 +25,7 @@ require __DIR__.'/includes/header.php';
     <p>Contact : <a href="mailto:<?= e($email) ?>"><?= e($email) ?></a></p>
 
     <h2>Données collectées via formulaire</h2>
-    <p>Les formulaires du site peuvent collecter les informations transmises volontairement : nom, entreprise, adresse email, téléphone, rôle, niveau de maturité IA, besoin principal, périmètre, horizon, budget, message et consentement RGPD.</p>
+    <p>Les formulaires du site peuvent collecter les informations transmises volontairement : prénom, nom, entreprise, adresse email, téléphone, fonction, taille d’entreprise, secteur d’activité, réponses au diagnostic IA, objectifs business, budget, message, consentement RGPD, scores de qualification et offre recommandée.</p>
     <p>Le formulaire de pré-diagnostic peut également enregistrer une empreinte d’adresse IP et le user-agent afin de sécuriser les demandes et limiter les abus.</p>
 
     <h2>Finalités</h2>

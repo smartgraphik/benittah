@@ -30,3 +30,15 @@
 .carrousel-add-panel{box-shadow:none;background:#fffaf4}
 @media(max-width:1100px){.admin-stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.admin-panel{padding:20px}.admin-form-grid,.lead-detail-grid,.admin-stats{grid-template-columns:1fr}.admin-main h1{font-size:34px}.admin-panel-head{display:grid}}
+.lead-score-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
+.lead-score-card{padding:16px;border:1px solid var(--line);border-radius:16px;background:#fffaf4;display:grid;gap:5px}
+.lead-score-card span{font-family:var(--title);font-size:30px;color:var(--orange);line-height:1}
+.lead-score-card strong{font-size:14px;color:#2b211b}
+.lead-score-card small{text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:900}
+.lead-offer-box{padding:18px;border:1px solid rgba(255,90,20,.22);border-radius:18px;background:#fff7ef}
+.lead-offer-box strong{display:block;font-size:22px;margin-bottom:8px;color:#2b211b}
+.lead-offer-box p{margin:0;color:#5e5047}
+.lead-detail-grid .full-detail{grid-column:1/-1;display:grid;gap:8px}
+.lead-detail-grid .full-detail span{display:block}
+@media(max-width:900px){.lead-score-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.lead-score-grid{grid-template-columns:1fr}}

@@ -13,11 +13,14 @@ CREATE TABLE IF NOT EXISTS leads_diagnostic_ia (
   updated_at DATETIME NULL,
   source_page VARCHAR(255) NULL,
   source_offre VARCHAR(100) NULL,
+  prenom VARCHAR(120) NULL,
   nom VARCHAR(190) NOT NULL,
   entreprise VARCHAR(190) NULL,
   email VARCHAR(190) NOT NULL,
   telephone VARCHAR(80) NULL,
   role_contact VARCHAR(120) NULL,
+  taille_entreprise VARCHAR(120) NULL,
+  secteur_activite VARCHAR(190) NULL,
   niveau_ia VARCHAR(190) NULL,
   besoin_principal VARCHAR(190) NULL,
   perimetre VARCHAR(190) NULL,
@@ -30,9 +33,22 @@ CREATE TABLE IF NOT EXISTS leads_diagnostic_ia (
   statut VARCHAR(80) NOT NULL DEFAULT 'Nouveau',
   note_interne TEXT NULL,
   date_relance DATE NULL,
+  score_maturite_ia TINYINT UNSIGNED NULL,
+  score_gouvernance_risque TINYINT UNSIGNED NULL,
+  score_opportunite_business TINYINT UNSIGNED NULL,
+  score_urgence TINYINT UNSIGNED NULL,
+  niveau_maturite VARCHAR(80) NULL,
+  niveau_risque VARCHAR(80) NULL,
+  niveau_opportunite VARCHAR(80) NULL,
+  niveau_urgence VARCHAR(80) NULL,
+  offre_recommandee VARCHAR(190) NULL,
+  explication_recommandation TEXT NULL,
+  raw_answers_json LONGTEXT NULL,
   INDEX idx_leads_statut (statut),
   INDEX idx_leads_offre (source_offre),
-  INDEX idx_leads_created_at (created_at)
+  INDEX idx_leads_created_at (created_at),
+  INDEX idx_leads_offre_recommandee (offre_recommandee),
+  INDEX idx_leads_score_urgence (score_urgence)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS articles (

@@ -4,16 +4,14 @@ require_admin();
 
 $statuses = allowed_lead_statuses();
 $status = clean_text($_GET['statut'] ?? '', 80);
-$offre = clean_text($_GET['offre'] ?? '', 100);
-$budget = clean_text($_GET['budget'] ?? '', 190);
+$offre = clean_text($_GET['offre'] ?? '', 190);
 $q = clean_text($_GET['q'] ?? '', 190);
 $where = array();
 $params = array();
 if ($status !== '') { $where[] = 'statut = :statut'; $params[':statut'] = $status; }
-if ($offre !== '') { $where[] = 'source_offre = :offre'; $params[':offre'] = $offre; }
-if ($budget !== '') { $where[] = 'budget = :budget'; $params[':budget'] = $budget; }
+if ($offre !== '') { $where[] = 'offre_recommandee = :offre'; $params[':offre'] = $offre; }
 if ($q !== '') {
-  $where[] = '(nom LIKE :q OR entreprise LIKE :q OR email LIKE :q)';
+  $where[] = '(nom LIKE :q OR prenom LIKE :q OR entreprise LIKE :q OR email LIKE :q)';
   $params[':q'] = '%' . $q . '%';
 }
 $sqlWhere = $where ? ' WHERE ' . implode(' AND ', $where) : '';
@@ -33,19 +31,21 @@ if (isset($_GET['export']) && $_GET['export'] === 'csv') {
   header('Content-Type: text/csv; charset=UTF-8');
   header('Content-Disposition: attachment; filename="leads-diagnostic-ia.csv"');
   $out = fopen('php://output', 'w');
-  fputcsv($out, array('Date','Nom','Entreprise','Email','Téléphone','Offre','Besoin','Budget','Statut'));
+  fputcsv($out, array('Date','Prénom','Nom','Entreprise','Email','Téléphone','Offre recommandée','Maturité','Risque','Opportunité','Urgence','Statut'));
   foreach ($leads as $lead) {
-    fputcsv($out, array($lead['created_at'],$lead['nom'],$lead['entreprise'],$lead['email'],$lead['telephone'],$lead['source_offre'],$lead['besoin_principal'],$lead['budget'],$lead['statut']));
+    fputcsv($out, array($lead['created_at'] ?? '', $lead['prenom'] ?? '', $lead['nom'] ?? '', $lead['entreprise'] ?? '', $lead['email'] ?? '', $lead['telephone'] ?? '', $lead['offre_recommandee'] ?? '', $lead['niveau_maturite'] ?? '', $lead['niveau_risque'] ?? '', $lead['score_opportunite_business'] ?? '', $lead['niveau_urgence'] ?? '', $lead['statut'] ?? ''));
   }
   fclose($out);
   exit;
 }
 
+$offerOptions = array('Diagnostic IA & Opportunités','Gouvernance IA & IA Act','Adoption IA & Transformation des équipes','Automatisation & Agents IA');
+
 require __DIR__.'/../_layout.php';
 admin_header('Admin — Leads CRM','leads');
 ?>
 <div class="admin-top">
-  <div><h1>Leads CRM</h1><p>Demandes issues du formulaire de pré-diagnostic IA.</p></div>
+  <div><h1>Leads CRM</h1><p>Demandes issues du formulaire de diagnostic IA qualifié.</p></div>
   <a class="btn btn-primary" href="/admin/leads/?<?= e(http_build_query(array_merge($_GET, array('export'=>'csv')))) ?>">Export CSV</a>
 </div>
 <?php if(!empty($dbError)): ?><div class="notice error"><?= e($dbError) ?></div><?php endif; ?>
@@ -53,25 +53,24 @@ admin_header('Admin — Leads CRM','leads');
 <?php if(isset($_GET['deleted'])): ?><div class="notice">Lead supprimé.</div><?php endif; ?>
 <form class="admin-panel filter-row" method="get">
   <select name="statut"><option value="">Tous les statuts</option><?php foreach($statuses as $s): ?><option value="<?= e($s) ?>" <?= $status===$s?'selected':'' ?>><?= e($s) ?></option><?php endforeach; ?></select>
-  <select name="offre"><option value="">Toutes les offres</option><?php foreach(array('Diagnostic Flash IA','Diagnostic Adoption IA','Accompagnement 90 jours') as $o): ?><option value="<?= e($o) ?>" <?= $offre===$o?'selected':'' ?>><?= e($o) ?></option><?php endforeach; ?></select>
-  <input name="budget" value="<?= e($budget) ?>" placeholder="Budget">
+  <select name="offre"><option value="">Toutes les offres recommandées</option><?php foreach($offerOptions as $o): ?><option value="<?= e($o) ?>" <?= $offre===$o?'selected':'' ?>><?= e($o) ?></option><?php endforeach; ?></select>
   <input name="q" value="<?= e($q) ?>" placeholder="Nom, entreprise, email">
   <button class="mini-btn" type="submit">Filtrer</button>
 </form>
 <div class="admin-panel">
   <div class="admin-table-wrap">
     <table class="admin-table">
-      <thead><tr><th>Date</th><th>Nom</th><th>Entreprise</th><th>Offre</th><th>Besoin</th><th>Budget</th><th>Statut</th><th>Action</th></tr></thead>
+      <thead><tr><th>Date</th><th>Contact</th><th>Entreprise</th><th>Offre recommandée</th><th>Urgence</th><th>Opportunité</th><th>Statut</th><th>Action</th></tr></thead>
       <tbody>
       <?php foreach($leads as $lead): ?>
         <tr>
-          <td><?= e($lead['created_at']) ?></td>
-          <td><strong><?= e($lead['nom']) ?></strong><br><span><?= e($lead['email']) ?></span></td>
-          <td><?= e($lead['entreprise']) ?></td>
-          <td><?= e($lead['source_offre']) ?></td>
-          <td><?= e($lead['besoin_principal']) ?></td>
-          <td><?= e($lead['budget']) ?></td>
-          <td><?= e($lead['statut']) ?></td>
+          <td><?= e($lead['created_at'] ?? '') ?></td>
+          <td><strong><?= e(trim(($lead['prenom'] ?? '') . ' ' . ($lead['nom'] ?? ''))) ?></strong><br><span><?= e($lead['email'] ?? '') ?></span></td>
+          <td><?= e($lead['entreprise'] ?? '') ?></td>
+          <td><?= e($lead['offre_recommandee'] ?? ($lead['source_offre'] ?? '')) ?></td>
+          <td><?= e($lead['niveau_urgence'] ?? '') ?><br><span><?= e(isset($lead['score_urgence']) ? $lead['score_urgence'].'/100' : '') ?></span></td>
+          <td><?= e(isset($lead['score_opportunite_business']) ? $lead['score_opportunite_business'].'/100' : '') ?><br><span><?= e($lead['niveau_opportunite'] ?? '') ?></span></td>
+          <td><?= e($lead['statut'] ?? '') ?></td>
           <td><a class="mini-btn" href="/admin/leads/view.php?id=<?= (int)$lead['id'] ?>">Voir</a></td>
         </tr>
       <?php endforeach; ?>
@@ -81,4 +80,3 @@ admin_header('Admin — Leads CRM','leads');
   </div>
 </div>
 <?php admin_footer(); ?>
-
