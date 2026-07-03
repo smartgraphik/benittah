@@ -23,3 +23,14 @@ define('SMTP_PASS', null);
 define('SMTP_FROM_EMAIL', 'cedrick@benittah.com');
 define('SMTP_FROM_NAME', 'benittah.com');
 
+// Sécurité admin. Laisser ADMIN_SECURITY_SECRET null utilise un secret serveur existant si disponible.
+define('ADMIN_SECURITY_SECRET', null);
+define('TRUST_PROXY_HEADERS', false);
+define('ADMIN_SESSION_IDLE_TIMEOUT', 1800);
+define('ADMIN_SESSION_ABSOLUTE_TIMEOUT', 28800);
+define('ADMIN_LOGIN_MAX_ATTEMPTS_ACCOUNT', 5);
+define('ADMIN_LOGIN_MAX_ATTEMPTS_IP', 15);
+define('ADMIN_LOGIN_WINDOW_SECONDS', 900);
+define('ADMIN_LOGIN_LOCK_ACCOUNT_SECONDS', 900);
+define('ADMIN_LOGIN_LOCK_IP_SECONDS', 1800);
+define('ADMIN_LOGIN_ATTEMPT_RETENTION_SECONDS', 2592000);

@@ -52,6 +52,8 @@
         "h1": "Merci pour votre demande.",
         "canonical": "https://benittah.com/merci-pre-diagnostic-ia/",
         "keywords": "restitution diagnostic transformation, diagnostic 360, maturité transformation",
+        "robots": "noindex, follow",
+        "sitemap_include": false,
         "og_image": "/assets/img/ui/og-image.svg"
     },
     {

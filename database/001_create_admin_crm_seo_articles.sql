@@ -7,6 +7,16 @@ CREATE TABLE IF NOT EXISTS admin_users (
   updated_at DATETIME NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS admin_login_attempts (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  identifier_hash CHAR(64) NOT NULL,
+  ip_hash CHAR(64) NOT NULL,
+  success TINYINT(1) NOT NULL DEFAULT 0,
+  attempted_at DATETIME NOT NULL,
+  INDEX idx_identifier_date (identifier_hash, attempted_at),
+  INDEX idx_ip_date (ip_hash, attempted_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 CREATE TABLE IF NOT EXISTS leads_diagnostic_ia (
   id INT AUTO_INCREMENT PRIMARY KEY,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -115,22 +125,24 @@ CREATE TABLE IF NOT EXISTS seo_pages (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO seo_pages
-  (page_path, page_label, meta_title, meta_description, canonical_url, sitemap_priority, sitemap_changefreq)
+  (page_path, page_label, meta_title, meta_description, canonical_url, robots, sitemap_include, sitemap_priority, sitemap_changefreq)
 VALUES
-  ('/', 'Accueil', 'Consultant Adoption IA & Transformation — Cédrick Benittah', 'Passez de l’intention IA à une feuille de route concrète, responsable et adoptée.', 'https://benittah.com/', 1.0, 'monthly'),
-  ('/cedrick-benittah/', 'Cédrick Benittah', 'Cédrick Benittah — Transformation, IA, agilité & performance', 'Parcours, expertises et prises de parole de Cédrick Benittah.', 'https://benittah.com/cedrick-benittah/', 0.8, 'monthly'),
-  ('/diagnostic-adoption-ia-transformation/', 'Diagnostic Transformation 360°', 'Diagnostic Transformation 360° — Cédrick Benittah', 'Évaluez votre maturité de transformation : stratégie, organisation, IA, gouvernance, adoption, automatisation et feuille de route 30 / 60 / 90 jours.', 'https://benittah.com/diagnostic-adoption-ia-transformation/', 1.0, 'monthly'),
-  ('/gouvernance-ia-ia-act/', 'Gouvernance IA & IA Act', 'Gouvernance IA & IA Act | Consultant Adoption IA', 'Accompagnement des dirigeants, DSI et équipes transformation pour structurer une gouvernance IA responsable.', 'https://benittah.com/gouvernance-ia-ia-act/', 0.9, 'monthly'),
-  ('/evaluer-mon-besoin-ia/', 'Diagnostic Transformation 360°', 'Diagnostic Transformation 360° — Cédrick Benittah', 'Évaluez votre maturité de transformation à 360° : stratégie, organisation, IA, gouvernance, adoption et automatisation.', 'https://benittah.com/evaluer-mon-besoin-ia/', 0.9, 'monthly'),
-  ('/merci-pre-diagnostic-ia/', 'Restitution Diagnostic 360°', 'Votre restitution Diagnostic Transformation 360°', 'Première restitution de votre diagnostic de maturité de transformation.', 'https://benittah.com/merci-pre-diagnostic-ia/', 0.6, 'monthly'),
-  ('/articles/', 'Articles', 'Articles — Adoption IA, Gouvernance & Transformation', 'Articles et analyses pour éclairer l’adoption IA, la gouvernance, la transformation, l’agilité et le delivery.', 'https://benittah.com/articles/', 0.8, 'monthly'),
-  ('/contact/', 'Contact', 'Contact — Échangeons sur vos ambitions de transformation', 'Contactez Cédrick Benittah pour un premier échange confidentiel.', 'https://benittah.com/contact/', 0.8, 'monthly'),
-  ('/mentions-legales/', 'Mentions légales', 'Mentions légales — Cédrick Benittah', 'Mentions légales du site benittah.com.', 'https://benittah.com/mentions-legales/', 0.4, 'monthly'),
-  ('/politique-confidentialite/', 'Politique de confidentialité', 'Politique de confidentialité — Cédrick Benittah', 'Politique de confidentialité et traitement des données personnelles.', 'https://benittah.com/politique-confidentialite/', 0.4, 'monthly')
+  ('/', 'Accueil', 'Consultant Adoption IA & Transformation — Cédrick Benittah', 'Passez de l’intention IA à une feuille de route concrète, responsable et adoptée.', 'https://benittah.com/', 'index, follow', 1, 1.0, 'monthly'),
+  ('/cedrick-benittah/', 'Cédrick Benittah', 'Cédrick Benittah — Transformation, IA, agilité & performance', 'Parcours, expertises et prises de parole de Cédrick Benittah.', 'https://benittah.com/cedrick-benittah/', 'index, follow', 1, 0.8, 'monthly'),
+  ('/diagnostic-adoption-ia-transformation/', 'Diagnostic Transformation 360°', 'Diagnostic Transformation 360° — Cédrick Benittah', 'Évaluez votre maturité de transformation : stratégie, organisation, IA, gouvernance, adoption, automatisation et feuille de route 30 / 60 / 90 jours.', 'https://benittah.com/diagnostic-adoption-ia-transformation/', 'index, follow', 1, 1.0, 'monthly'),
+  ('/gouvernance-ia-ia-act/', 'Gouvernance IA & IA Act', 'Gouvernance IA & IA Act | Consultant Adoption IA', 'Accompagnement des dirigeants, DSI et équipes transformation pour structurer une gouvernance IA responsable.', 'https://benittah.com/gouvernance-ia-ia-act/', 'index, follow', 1, 0.9, 'monthly'),
+  ('/evaluer-mon-besoin-ia/', 'Diagnostic Transformation 360°', 'Diagnostic Transformation 360° — Cédrick Benittah', 'Évaluez votre maturité de transformation à 360° : stratégie, organisation, IA, gouvernance, adoption et automatisation.', 'https://benittah.com/evaluer-mon-besoin-ia/', 'index, follow', 1, 0.9, 'monthly'),
+  ('/merci-pre-diagnostic-ia/', 'Restitution Diagnostic 360°', 'Votre restitution Diagnostic Transformation 360°', 'Première restitution de votre diagnostic de maturité de transformation.', 'https://benittah.com/merci-pre-diagnostic-ia/', 'noindex, follow', 0, 0.6, 'monthly'),
+  ('/articles/', 'Articles', 'Articles — Adoption IA, Gouvernance & Transformation', 'Articles et analyses pour éclairer l’adoption IA, la gouvernance, la transformation, l’agilité et le delivery.', 'https://benittah.com/articles/', 'index, follow', 1, 0.8, 'monthly'),
+  ('/contact/', 'Contact', 'Contact — Échangeons sur vos ambitions de transformation', 'Contactez Cédrick Benittah pour un premier échange confidentiel.', 'https://benittah.com/contact/', 'index, follow', 1, 0.8, 'monthly'),
+  ('/mentions-legales/', 'Mentions légales', 'Mentions légales — Cédrick Benittah', 'Mentions légales du site benittah.com.', 'https://benittah.com/mentions-legales/', 'index, follow', 1, 0.4, 'monthly'),
+  ('/politique-confidentialite/', 'Politique de confidentialité', 'Politique de confidentialité — Cédrick Benittah', 'Politique de confidentialité et traitement des données personnelles.', 'https://benittah.com/politique-confidentialite/', 'index, follow', 1, 0.4, 'monthly')
 ON DUPLICATE KEY UPDATE
   page_label = VALUES(page_label),
   meta_title = VALUES(meta_title),
   meta_description = VALUES(meta_description),
   canonical_url = VALUES(canonical_url),
+  robots = VALUES(robots),
+  sitemap_include = VALUES(sitemap_include),
   sitemap_priority = VALUES(sitemap_priority),
   sitemap_changefreq = VALUES(sitemap_changefreq);

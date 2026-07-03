@@ -13,9 +13,11 @@ $meta=getSeoMeta('/merci-pre-diagnostic-ia/');
 $meta['meta_title']='Votre restitution Diagnostic Transformation 360°';
 $meta['meta_description']='Première restitution de votre diagnostic de maturité de transformation.';
 $meta['canonical']='https://benittah.com/merci-pre-diagnostic-ia/';
+$meta['robots']='noindex, follow';
 $canonical=absolute_url('/merci-pre-diagnostic-ia/');
 $calendlyCta='/contact/#calendly-widget';
 $dimensions = transformation_assessment_dimensions();
+if (!headers_sent()) { header('X-Robots-Tag: noindex, follow', true); }
 require __DIR__.'/../includes/header.php';
 ?>
 <section class="page-hero thank-you-hero">
