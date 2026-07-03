@@ -10,13 +10,14 @@ if (current_path() === '/diagnostic-adoption-ia-transformation.php') {
 $meta=page_meta('diagnostic');
 $cfg=site();
 $canonical=absolute_url('/diagnostic-adoption-ia-transformation/');
-$diagnosticCta='/contact/#calendly-widget';
+$diagnosticCta='/evaluer-mon-besoin-ia/';
+$calendlyCta='/contact/#calendly-widget';
 
 $audienceItems=array(
-  'Identifier les bons cas d’usage IA.',
-  'Éviter les expérimentations inutiles.',
-  'Sécuriser les risques data, humains et organisationnels.',
-  'Embarquer les équipes.',
+  'Clarifier les priorités de transformation.',
+  'Identifier les bons cas d’usage IA et automatisation.',
+  'Sécuriser les risques data, humains, organisationnels et réglementaires.',
+  'Embarquer les équipes et les managers.',
   'Construire une roadmap claire avant d’investir.'
 );
 
@@ -24,12 +25,12 @@ $methodSteps=array(
   array(
     'num'=>'1',
     'title'=>'Diagnostiquer',
-    'text'=>'Comprendre les irritants métier, les usages actuels, les contraintes IT, les risques et les attentes des parties prenantes.'
+    'text'=>'Comprendre les irritants métier, la vision, les usages actuels, les contraintes IT, les risques et les attentes des parties prenantes.'
   ),
   array(
     'num'=>'2',
     'title'=>'Prioriser',
-    'text'=>'Identifier les cas d’usage IA selon leur valeur métier, leur faisabilité, leur niveau de risque et leur capacité d’adoption.'
+    'text'=>'Identifier les leviers prioritaires selon leur valeur métier, leur faisabilité, leur niveau de risque et leur capacité d’adoption.'
   ),
   array(
     'num'=>'3',
@@ -45,7 +46,7 @@ $methodSteps=array(
 
 $deliverables=array(
   'Une synthèse des irritants métier.',
-  'Une cartographie des cas d’usage IA.',
+  'Une cartographie des priorités, risques, irritants et cas d’usage IA.',
   'Une matrice de priorisation.',
   'Une analyse des risques.',
   'Une roadmap 30 / 60 / 90 jours.',
@@ -54,7 +55,7 @@ $deliverables=array(
 
 $formatItems=array(
   '2 à 3 entretiens ciblés avec les parties prenantes.',
-  '1 atelier de priorisation des cas d’usage IA.',
+  '1 atelier de priorisation des leviers de transformation.',
   '1 cartographie des opportunités, risques et irritants.',
   '1 matrice valeur / faisabilité / risque.',
   '1 restitution dirigeant, sponsor ou comité projet.',
@@ -63,9 +64,9 @@ $formatItems=array(
 );
 
 $fitItems=array(
-  'Vous avez testé ChatGPT, Copilot ou d’autres outils IA sans vision claire.',
-  'Vous sentez une pression autour de l’IA mais ne savez pas quoi prioriser.',
-  'Vos équipes sont curieuses mais dispersées.',
+  'Vous avez plusieurs chantiers de transformation sans feuille de route claire.',
+  'Vous sentez une pression autour de l’IA, de l’automatisation ou de la performance mais ne savez pas quoi prioriser.',
+  'Vos équipes sont curieuses, sollicitées, mais dispersées.',
   'Vous voulez cadrer les risques avant de généraliser.',
   'Vous cherchez une feuille de route concrète, pas une conférence inspirante.'
 );
@@ -101,15 +102,15 @@ $fieldCases=array(
 $formats=array(
   array(
     'code'=>'flash',
-    'title'=>'Diagnostic Flash IA',
-    'price'=>'À partir de 1 500 € HT',
-    'text'=>'Un format court pour identifier rapidement les premiers cas d’usage, clarifier les enjeux et produire une synthèse actionnable.'
+    'title'=>'Évaluation en ligne 360°',
+    'price'=>'Gratuite',
+    'text'=>'Une première photographie indicative pour mesurer votre maturité, repérer les vigilances et orienter le bon accompagnement.'
   ),
   array(
     'code'=>'adoption',
-    'title'=>'Diagnostic Adoption IA',
+    'title'=>'Diagnostic Transformation 360°',
     'price'=>'Sur devis',
-    'text'=>'Un format complet avec entretiens ciblés, analyse des irritants, cartographie des cas d’usage, lecture des risques et roadmap 30 / 60 / 90 jours.'
+    'text'=>'Une offre complète avec entretiens ciblés, analyse des irritants, cartographie des risques et opportunités, restitution et roadmap priorisée.'
   ),
   array(
     'code'=>'90jours',
@@ -122,11 +123,11 @@ $formats=array(
 $serviceSchema=array(
   '@context'=>'https://schema.org',
   '@type'=>'Service',
-  'name'=>'Diagnostic Adoption IA & Transformation',
-  'description'=>'Diagnostic pour clarifier les cas d’usage IA, sécuriser les risques et construire une roadmap opérationnelle 30 / 60 / 90 jours.',
+  'name'=>'Diagnostic Transformation 360°',
+  'description'=>'Diagnostic pour évaluer la maturité de transformation, clarifier les priorités, sécuriser les risques et construire une roadmap opérationnelle 30 / 60 / 90 jours.',
   'provider'=>array('@type'=>'Person','name'=>'Cédrick Benittah','url'=>absolute_url('/cedrick-benittah/')),
   'areaServed'=>'France',
-  'serviceType'=>'Conseil en transformation, adoption IA et conduite du changement',
+  'serviceType'=>'Conseil en transformation, gouvernance, adoption IA, automatisation et conduite du changement',
   'offers'=>array('@type'=>'Offer','priceSpecification'=>array('@type'=>'PriceSpecification','priceCurrency'=>'EUR','minPrice'=>'1500'),'url'=>$canonical),
   'url'=>$canonical
 );
@@ -137,16 +138,17 @@ require __DIR__.'/includes/header.php';
 
 <section class="page-hero diagnostic-hero">
   <div class="container">
-    <div class="eyebrow">Diagnostic IA</div>
-    <h1>Diagnostic Adoption IA & Transformation</h1>
-    <p>Clarifiez vos cas d’usage IA, sécurisez les risques et repartez avec une roadmap opérationnelle 30 / 60 / 90 jours.</p>
+    <div class="eyebrow">Diagnostic Transformation 360°</div>
+    <h1>Diagnostic Transformation 360°</h1>
+    <p>Évaluez votre maturité de transformation, clarifiez vos priorités, sécurisez les risques et repartez avec une roadmap opérationnelle 30 / 60 / 90 jours.</p>
     <div class="hero-actions offer-actions">
-      <a class="btn btn-primary" href="<?= e($diagnosticCta) ?>">Planifier un diagnostic IA</a>
+      <a class="btn btn-primary" href="<?= e($diagnosticCta) ?>">Faire mon diagnostic 360°</a>
+      <a class="btn btn-outline" href="<?= e($calendlyCta) ?>">Échanger sur mes enjeux</a>
     </div>
     <div class="diagnostic-hero-points" aria-label="Points clés du diagnostic">
-      <span>Cas d’usage utiles</span>
+      <span>Vision et priorités</span>
+      <span>Organisation et exécution</span>
       <span>Risques clarifiés</span>
-      <span>Priorités arbitrées</span>
       <span>Roadmap 30 / 60 / 90</span>
     </div>
   </div>
@@ -156,11 +158,11 @@ require __DIR__.'/includes/header.php';
   <div class="container split-large">
     <div class="section-heading">
       <div class="eyebrow">Problème client</div>
-      <h2>Vous avez commencé à tester l’IA, mais les usages restent dispersés ?</h2>
+      <h2>Votre transformation avance, mais les priorités restent difficiles à arbitrer ?</h2>
     </div>
     <div class="premium-box diagnostic-problem-card">
       <p>Les métiers identifient des opportunités, l’IT voit les risques, les managers doivent embarquer les équipes, mais les priorités ne sont pas toujours claires.</p>
-      <p>Le diagnostic Adoption IA & Transformation permet de remettre de la clarté, d’identifier les vrais cas d’usage, de mesurer les risques et de construire une trajectoire réaliste.</p>
+      <p>Le Diagnostic Transformation 360° permet de remettre de la clarté, d’identifier les vrais leviers, de mesurer les risques et de construire une trajectoire réaliste.</p>
       <p>Lorsque le sujet porte surtout sur les règles d’usage, les responsabilités et l’IA Act, l’accompagnement <a class="link-orange" href="/gouvernance-ia-ia-act/">Gouvernance IA & IA Act</a> permet d’aller plus loin sur le cadre responsable.</p>
     </div>
   </div>
@@ -170,8 +172,8 @@ require __DIR__.'/includes/header.php';
   <div class="container diagnostic-feature">
     <div>
       <div class="eyebrow">Pour qui ?</div>
-      <h2>Passer d’une expérimentation IA dispersée à une démarche structurée.</h2>
-      <p>Ce diagnostic s’adresse aux dirigeants, DSI, responsables transformation, directions métiers et managers qui veulent passer d’une expérimentation IA dispersée à une démarche structurée, utile et maîtrisée.</p>
+      <h2>Passer d’initiatives dispersées à une démarche structurée.</h2>
+      <p>Ce diagnostic s’adresse aux dirigeants, DSI, responsables transformation, directions métiers et managers qui veulent relier stratégie, organisation, IA, gouvernance, adoption et performance opérationnelle.</p>
     </div>
     <div class="premium-box diagnostic-list-card">
       <ul class="bullets">
@@ -202,7 +204,7 @@ require __DIR__.'/includes/header.php';
   <div class="container split-large">
     <div class="premium-box diagnostic-list-card">
       <div class="eyebrow">Ce diagnostic est fait pour vous si...</div>
-      <h2>Vous avez besoin de clarté avant de généraliser l’IA.</h2>
+      <h2>Vous avez besoin de clarté avant d’investir.</h2>
       <ul class="bullets">
         <?php foreach($fitItems as $item): ?>
           <li><?= e($item) ?></li>
@@ -286,7 +288,7 @@ require __DIR__.'/includes/header.php';
           <h3><?= e($format['title']) ?></h3>
           <strong><?= e($format['price']) ?></strong>
           <p><?= e($format['text']) ?></p>
-          <a class="btn btn-primary" href="/evaluer-mon-besoin-ia/?offre=<?= e($format['code']) ?>">Démarrer le pré-diagnostic</a>
+          <a class="btn btn-primary" href="/evaluer-mon-besoin-ia/?offre=<?= e($format['code']) ?>">Faire mon diagnostic 360°</a>
         </article>
       <?php endforeach; ?>
     </div>
@@ -296,11 +298,11 @@ require __DIR__.'/includes/header.php';
 <section class="final-cta diagnostic-final-cta">
   <div class="container final-cta-card">
     <div>
-      <div class="eyebrow">Diagnostic IA</div>
-      <h2>Vous souhaitez clarifier vos priorités IA ?</h2>
+      <div class="eyebrow">Diagnostic Transformation 360°</div>
+      <h2>Vous souhaitez clarifier vos priorités de transformation ?</h2>
     </div>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="<?= e($diagnosticCta) ?>">Planifier un diagnostic IA</a>
+      <a class="btn btn-primary" href="<?= e($diagnosticCta) ?>">Faire mon diagnostic 360°</a>
       <a class="btn btn-outline" href="/gouvernance-ia-ia-act/">Voir la gouvernance IA</a>
     </div>
   </div>

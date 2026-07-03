@@ -1,6 +1,7 @@
 <?php
 require __DIR__.'/../auth.php';
 require_admin();
+require_once __DIR__.'/../../includes/transformation_assessment.php';
 
 $statuses = allowed_lead_statuses();
 $status = clean_text($_GET['statut'] ?? '', 80);
@@ -9,11 +10,8 @@ $q = clean_text($_GET['q'] ?? '', 190);
 $where = array();
 $params = array();
 if ($status !== '') { $where[] = 'statut = :statut'; $params[':statut'] = $status; }
-if ($offre !== '') { $where[] = 'offre_recommandee = :offre'; $params[':offre'] = $offre; }
-if ($q !== '') {
-  $where[] = '(nom LIKE :q OR prenom LIKE :q OR entreprise LIKE :q OR email LIKE :q)';
-  $params[':q'] = '%' . $q . '%';
-}
+if ($offre !== '') { $where[] = '(recommandation_principale = :offre OR offre_recommandee = :offre)'; $params[':offre'] = $offre; }
+if ($q !== '') { $where[] = '(nom LIKE :q OR prenom LIKE :q OR entreprise LIKE :q OR email LIKE :q)'; $params[':q'] = '%' . $q . '%'; }
 $sqlWhere = $where ? ' WHERE ' . implode(' AND ', $where) : '';
 
 try {
@@ -29,23 +27,24 @@ try {
 
 if (isset($_GET['export']) && $_GET['export'] === 'csv') {
   header('Content-Type: text/csv; charset=UTF-8');
-  header('Content-Disposition: attachment; filename="leads-diagnostic-ia.csv"');
+  header('Content-Disposition: attachment; filename="leads-diagnostic-transformation-360.csv"');
   $out = fopen('php://output', 'w');
-  fputcsv($out, array('Date','Prénom','Nom','Entreprise','Email','Téléphone','Offre recommandée','Maturité','Risque','Opportunité','Urgence','Statut'));
+  fputcsv($out, array('Date','Prénom','Nom','Entreprise','Email','Téléphone','Score global','Niveau transformation','Risque','Création valeur','Urgence','Recommandation','Statut'));
   foreach ($leads as $lead) {
-    fputcsv($out, array($lead['created_at'] ?? '', $lead['prenom'] ?? '', $lead['nom'] ?? '', $lead['entreprise'] ?? '', $lead['email'] ?? '', $lead['telephone'] ?? '', $lead['offre_recommandee'] ?? '', $lead['niveau_maturite'] ?? '', $lead['niveau_risque'] ?? '', $lead['score_opportunite_business'] ?? '', $lead['niveau_urgence'] ?? '', $lead['statut'] ?? ''));
+    fputcsv($out, array($lead['created_at'] ?? '', $lead['prenom'] ?? '', $lead['nom'] ?? '', $lead['entreprise'] ?? '', $lead['email'] ?? '', $lead['telephone'] ?? '', $lead['score_transformation_global'] ?? '', $lead['niveau_transformation'] ?? '', $lead['niveau_risque'] ?? '', $lead['niveau_creation_valeur'] ?? '', $lead['niveau_urgence'] ?? '', $lead['recommandation_principale'] ?? ($lead['offre_recommandee'] ?? ''), $lead['statut'] ?? ''));
   }
   fclose($out);
   exit;
 }
 
-$offerOptions = array('Diagnostic IA & Opportunités','Gouvernance IA & IA Act','Adoption IA & Transformation des équipes','Automatisation & Agents IA');
+$offerOptions = array();
+foreach (transformation_recommendation_catalog() as $offer) { $offerOptions[] = $offer['label']; }
 
 require __DIR__.'/../_layout.php';
 admin_header('Admin — Leads CRM','leads');
 ?>
 <div class="admin-top">
-  <div><h1>Leads CRM</h1><p>Demandes issues du formulaire de diagnostic IA qualifié.</p></div>
+  <div><h1>Leads CRM</h1><p>Prospects issus du Diagnostic Transformation 360°.</p></div>
   <a class="btn btn-primary" href="/admin/leads/?<?= e(http_build_query(array_merge($_GET, array('export'=>'csv')))) ?>">Export CSV</a>
 </div>
 <?php if(!empty($dbError)): ?><div class="notice error"><?= e($dbError) ?></div><?php endif; ?>
@@ -53,28 +52,30 @@ admin_header('Admin — Leads CRM','leads');
 <?php if(isset($_GET['deleted'])): ?><div class="notice">Lead supprimé.</div><?php endif; ?>
 <form class="admin-panel filter-row" method="get">
   <select name="statut"><option value="">Tous les statuts</option><?php foreach($statuses as $s): ?><option value="<?= e($s) ?>" <?= $status===$s?'selected':'' ?>><?= e($s) ?></option><?php endforeach; ?></select>
-  <select name="offre"><option value="">Toutes les offres recommandées</option><?php foreach($offerOptions as $o): ?><option value="<?= e($o) ?>" <?= $offre===$o?'selected':'' ?>><?= e($o) ?></option><?php endforeach; ?></select>
+  <select name="offre"><option value="">Toutes les recommandations</option><?php foreach($offerOptions as $o): ?><option value="<?= e($o) ?>" <?= $offre===$o?'selected':'' ?>><?= e($o) ?></option><?php endforeach; ?></select>
   <input name="q" value="<?= e($q) ?>" placeholder="Nom, entreprise, email">
   <button class="mini-btn" type="submit">Filtrer</button>
 </form>
 <div class="admin-panel">
   <div class="admin-table-wrap">
     <table class="admin-table">
-      <thead><tr><th>Date</th><th>Contact</th><th>Entreprise</th><th>Offre recommandée</th><th>Urgence</th><th>Opportunité</th><th>Statut</th><th>Action</th></tr></thead>
+      <thead><tr><th>Date</th><th>Contact</th><th>Entreprise</th><th>Score global</th><th>Risque</th><th>Valeur</th><th>Urgence</th><th>Recommandation</th><th>Statut</th><th>Action</th></tr></thead>
       <tbody>
       <?php foreach($leads as $lead): ?>
         <tr>
           <td><?= e($lead['created_at'] ?? '') ?></td>
           <td><strong><?= e(trim(($lead['prenom'] ?? '') . ' ' . ($lead['nom'] ?? ''))) ?></strong><br><span><?= e($lead['email'] ?? '') ?></span></td>
           <td><?= e($lead['entreprise'] ?? '') ?></td>
-          <td><?= e($lead['offre_recommandee'] ?? ($lead['source_offre'] ?? '')) ?></td>
+          <td><span class="admin-badge-soft"><?= e(isset($lead['score_transformation_global']) ? $lead['score_transformation_global'].'/100' : '') ?></span><br><span><?= e($lead['niveau_transformation'] ?? '') ?></span></td>
+          <td><span class="admin-badge-soft risk"><?= e($lead['niveau_risque'] ?? '') ?></span></td>
+          <td><?= e(isset($lead['score_creation_valeur']) ? $lead['score_creation_valeur'].'/100' : '') ?><br><span><?= e($lead['niveau_creation_valeur'] ?? '') ?></span></td>
           <td><?= e($lead['niveau_urgence'] ?? '') ?><br><span><?= e(isset($lead['score_urgence']) ? $lead['score_urgence'].'/100' : '') ?></span></td>
-          <td><?= e(isset($lead['score_opportunite_business']) ? $lead['score_opportunite_business'].'/100' : '') ?><br><span><?= e($lead['niveau_opportunite'] ?? '') ?></span></td>
-          <td><?= e($lead['statut'] ?? '') ?></td>
+          <td><?= e($lead['recommandation_principale'] ?? ($lead['offre_recommandee'] ?? '')) ?></td>
+          <td><span class="admin-badge-soft status"><?= e($lead['statut'] ?? '') ?></span></td>
           <td><a class="mini-btn" href="/admin/leads/view.php?id=<?= (int)$lead['id'] ?>">Voir</a></td>
         </tr>
       <?php endforeach; ?>
-      <?php if(!$leads): ?><tr><td colspan="8">Aucun lead trouvé.</td></tr><?php endif; ?>
+      <?php if(!$leads): ?><tr><td colspan="10">Aucun lead trouvé.</td></tr><?php endif; ?>
       </tbody>
     </table>
   </div>

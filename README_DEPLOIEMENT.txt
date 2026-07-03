@@ -9,7 +9,8 @@ Contenu du ZIP
 
 Prérequis IONOS
 - PHP 8.0 ou supérieur, recommandé : PHP 8.2+ selon le contrat.
-- MySQL avec les tables créées via database/001_create_admin_crm_seo_articles.sql. Sur une base déjà en place, exécuter aussi database/002_add_diagnostic_scoring.sql pour ajouter les champs de qualification du diagnostic.
+- MySQL avec les tables créées via database/001_create_admin_crm_seo_articles.sql. Sur une base déjà en place, exécuter database/002_add_diagnostic_scoring.sql puis database/003_add_transformation_360.sql pour ajouter les champs de qualification du Diagnostic Transformation 360°.
+- La migration 003 est idempotente : elle vérifie les colonnes et index existants avant chaque ajout.
 - Fonction mail() active ou SMTP configuré dans config/config.local.php.
 
 Configuration
@@ -26,7 +27,7 @@ Accès admin
 Déploiement
 1. Uploader les fichiers à la racine du domaine benittah.com.
 2. Vérifier que .htaccess et .user.ini sont bien transférés.
-3. Importer database/001_create_admin_crm_seo_articles.sql sur une base neuve, ou exécuter database/002_add_diagnostic_scoring.sql sur une base existante déjà initialisée.
+3. Importer database/001_create_admin_crm_seo_articles.sql sur une base neuve, ou exécuter database/002_add_diagnostic_scoring.sql puis database/003_add_transformation_360.sql sur une base historique déjà initialisée.
 4. Tester /evaluer-mon-besoin-ia/ puis une soumission complète.
 5. Tester /admin/login.php, /admin/leads/, /admin/articles/ et /admin/seo/.
 6. Régénérer le sitemap depuis /admin/sitemap/generate.php si besoin.

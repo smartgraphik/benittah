@@ -261,9 +261,9 @@ function article_cta($a) {
   if ($pillar === 'IA & Adoption') {
     return array(
       'title' => 'Vous souhaitez passer de l’expérimentation IA à une feuille de route concrète ?',
-      'text' => 'Le Diagnostic Adoption IA & Transformation permet d’identifier les cas d’usage utiles, de clarifier les risques et de prioriser les actions 30 / 60 / 90 jours.',
-      'label' => 'Découvrir le diagnostic IA',
-      'url' => '/diagnostic-adoption-ia-transformation/'
+      'text' => 'Le Diagnostic Transformation 360° en ligne permet de repérer les priorités, les risques et les leviers de transformation à approfondir.',
+      'label' => 'Faire mon diagnostic 360°',
+      'url' => '/evaluer-mon-besoin-ia/'
     );
   }
   if ($pillar === 'Agilité & DevOps') {
@@ -285,8 +285,8 @@ function article_cta($a) {
   return array(
     'title' => 'Votre transformation a besoin d’un cadrage clair et actionnable ?',
     'text' => 'Clarifions vos priorités, vos irritants terrain et vos leviers de transformation pour construire une feuille de route utile et adoptée.',
-    'label' => 'Demander un diagnostic',
-    'url' => '/diagnostic-adoption-ia-transformation/'
+    'label' => 'Faire mon diagnostic 360°',
+    'url' => '/evaluer-mon-besoin-ia/'
   );
 }
 
@@ -325,7 +325,8 @@ function article_takeaways($article) {
 function article_internal_targets($article) {
   $slug = isset($article['slug']) ? $article['slug'] : '';
   $targets = array(
-    array('term' => 'Diagnostic Adoption IA', 'url' => '/diagnostic-adoption-ia-transformation/'),
+    array('term' => 'Diagnostic Transformation 360', 'url' => '/diagnostic-adoption-ia-transformation/'),
+    array('term' => 'diagnostic 360', 'url' => '/evaluer-mon-besoin-ia/'),
     array('term' => 'adoption IA', 'url' => '/diagnostic-adoption-ia-transformation/'),
     array('term' => 'IA Act', 'url' => '/articles/ia-act-organisations-anticiper/'),
     array('term' => 'IA générative', 'url' => '/articles/ia-generative-passer-experimentation-impact/'),

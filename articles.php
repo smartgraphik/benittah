@@ -31,7 +31,8 @@ foreach (articles() as $a) {
 }
 $categories = array_values(array_unique($categories)); sort($categories);
 $pillars = array_values(array_unique($pillars)); sort($pillars);
-$diagnosticUrl = '/diagnostic-adoption-ia-transformation/';
+$diagnosticUrl = '/evaluer-mon-besoin-ia/';
+$diagnosticOfferUrl = '/diagnostic-adoption-ia-transformation/';
 ?>
 <section class="page-hero articles-hero">
   <div class="container">
@@ -39,7 +40,7 @@ $diagnosticUrl = '/diagnostic-adoption-ia-transformation/';
     <h1>Une bibliothèque d’expertise pour transformer avec exigence.</h1>
     <p>Des contenus structurés pour éclairer l’adoption IA, la transformation, l’agilité, le DevOps, le leadership et la performance collective.</p>
     <div class="hero-actions offer-actions">
-      <a class="btn btn-primary" href="<?= e($diagnosticUrl) ?>">Découvrir le diagnostic IA</a>
+      <a class="btn btn-primary" href="<?= e($diagnosticUrl) ?>">Faire mon diagnostic 360°</a>
       <a class="btn btn-outline" href="/accompagnements/">Explorer les offres</a>
     </div>
   </div>
@@ -47,14 +48,14 @@ $diagnosticUrl = '/diagnostic-adoption-ia-transformation/';
 <section class="section"><div class="container">
   <div class="article-index-intro">
     <h2>Articles classés par piliers éditoriaux</h2>
-    <p>Chaque article renforce un axe d’expertise et intègre un maillage interne vers les offres, le diagnostic IA et les contenus associés.</p>
+    <p>Chaque article renforce un axe d’expertise et intègre un maillage interne vers les offres, le diagnostic 360° et les contenus associés.</p>
   </div>
   <div class="article-index-cta">
     <div>
       <div class="eyebrow">Besoin de passer à l’action ?</div>
-      <h2>Le Diagnostic Adoption IA & Transformation transforme ces réflexions en feuille de route 30 / 60 / 90 jours.</h2>
+      <h2>Le Diagnostic Transformation 360° transforme ces réflexions en feuille de route 30 / 60 / 90 jours.</h2>
     </div>
-    <a class="btn btn-primary" href="<?= e($diagnosticUrl) ?>">Voir l’offre phare</a>
+    <a class="btn btn-primary" href="<?= e($diagnosticOfferUrl) ?>">Découvrir l’offre</a>
   </div>
   <div class="filters pillar-filters">
     <a class="pill <?= $pillarFilter===''?'is-active':'' ?>" href="/articles/">Tous</a>
@@ -83,7 +84,7 @@ $diagnosticUrl = '/diagnostic-adoption-ia-transformation/';
   <div class="article-bottom-cta">
     <div>
       <strong>Vous cherchez à prioriser vos cas d’usage IA ou vos chantiers de transformation ?</strong>
-      <span>Un premier échange permet de clarifier le bon angle : diagnostic IA, transformation, agilité, DevOps ou leadership.</span>
+      <span>Un premier échange permet de clarifier le bon angle : diagnostic 360°, transformation, agilité, DevOps ou leadership.</span>
     </div>
     <a class="btn btn-outline" href="/contact/">Poser une question</a>
   </div>

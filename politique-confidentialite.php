@@ -25,8 +25,8 @@ require __DIR__.'/includes/header.php';
     <p>Contact : <a href="mailto:<?= e($email) ?>"><?= e($email) ?></a></p>
 
     <h2>Données collectées via formulaire</h2>
-    <p>Les formulaires du site peuvent collecter les informations transmises volontairement : prénom, nom, entreprise, adresse email, téléphone, fonction, taille d’entreprise, secteur d’activité, réponses au diagnostic IA, objectifs business, budget, message, consentement RGPD, scores de qualification et offre recommandée.</p>
-    <p>Le formulaire de pré-diagnostic peut également enregistrer une empreinte d’adresse IP et le user-agent afin de sécuriser les demandes et limiter les abus.</p>
+    <p>Les formulaires du site peuvent collecter les informations transmises volontairement : prénom, nom, entreprise, adresse email, téléphone, fonction, taille d’entreprise, secteur d’activité, réponses au Diagnostic Transformation 360°, objectifs business, budget, enjeu exprimé, consentement RGPD, scores de qualification, niveaux de maturité, niveau de risque, potentiel de création de valeur et recommandation principale.</p>
+    <p>Le formulaire de diagnostic peut également enregistrer une empreinte d’adresse IP et le user-agent afin de sécuriser les demandes et limiter les abus.</p>
 
     <h2>Finalités</h2>
     <p>Ces données sont utilisées pour répondre aux demandes, préparer un échange, qualifier le besoin d’accompagnement IA ou transformation, assurer le suivi de la relation et sécuriser les formulaires.</p>
@@ -36,7 +36,7 @@ require __DIR__.'/includes/header.php';
 
     <h2>Durée de conservation</h2>
     <p>Les données sont conservées pendant la durée nécessaire au traitement de la demande et au suivi de la relation, puis supprimées ou anonymisées lorsqu’elles ne sont plus utiles, sauf obligation légale contraire.</p>
-    <!-- TODO RGPD : confirmer la durée de conservation exacte retenue par l'éditeur, notamment pour les demandes entrantes et les leads de pré-diagnostic. -->
+    <!-- TODO RGPD : confirmer la durée de conservation exacte retenue par l'éditeur, notamment pour les demandes entrantes et les leads de diagnostic. -->
 
     <h2>Destinataires</h2>
     <p>Les données sont destinées à Cédrick Benittah et aux prestataires techniques strictement nécessaires au fonctionnement du site, de l’hébergement, de la messagerie, de la prise de rendez-vous ou des widgets intégrés.</p>

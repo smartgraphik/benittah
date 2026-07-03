@@ -1,43 +1,33 @@
 <?php
 $current='diagnostic';
 require __DIR__.'/../includes/security.php';
+require __DIR__.'/../includes/transformation_assessment.php';
 start_app_session();
 $result = $_SESSION['pre_diag_result'] ?? null;
 if (is_array($result)) {
   $result = array_merge(array(
-    'prenom' => '',
-    'offre_recommandee' => 'Diagnostic IA & Opportunités',
-    'explication_recommandation' => '',
-    'score_maturite_ia' => 0,
-    'score_gouvernance_risque' => 0,
-    'score_opportunite_business' => 0,
-    'score_urgence' => 0,
-    'niveau_maturite' => '',
-    'niveau_risque' => '',
-    'niveau_opportunite' => '',
-    'niveau_urgence' => '',
+    'prenom'=>'','score_transformation_global'=>0,'niveau_transformation'=>'','score_risque'=>0,'niveau_risque'=>'','score_creation_valeur'=>0,'niveau_creation_valeur'=>'','score_urgence'=>0,'niveau_urgence'=>'','priorite_principale'=>'','recommandation_principale'=>'Diagnostic Transformation 360°','recommandations_secondaires'=>array(),'explication_recommandation'=>'','prochaines_etapes'=>array(),'constats'=>array(),
   ), $result);
-} else {
-  $result = null;
-}
+} else { $result = null; }
 $meta=getSeoMeta('/merci-pre-diagnostic-ia/');
+$meta['meta_title']='Votre restitution Diagnostic Transformation 360°';
+$meta['meta_description']='Première restitution de votre diagnostic de maturité de transformation.';
 $meta['canonical']='https://benittah.com/merci-pre-diagnostic-ia/';
 $canonical=absolute_url('/merci-pre-diagnostic-ia/');
 $calendlyCta='/contact/#calendly-widget';
+$dimensions = transformation_assessment_dimensions();
 require __DIR__.'/../includes/header.php';
 ?>
 <section class="page-hero thank-you-hero">
   <div class="container">
-    <div class="eyebrow">Pré-diagnostic IA</div>
-    <h1>Merci pour votre demande.</h1>
+    <div class="eyebrow">Diagnostic Transformation 360°</div>
+    <h1>Merci pour votre diagnostic.</h1>
     <?php if($result): ?>
-      <p>Voici une première restitution de votre niveau de maturité IA. Elle ne remplace pas un échange de cadrage, mais permet déjà d’orienter la suite.</p>
+      <p><?= e($result['prenom'] ? 'Voici une première lecture pour ' . $result['prenom'] . '.' : 'Voici une première lecture de votre situation.') ?> Elle donne une photographie indicative ; un échange permettra d’approfondir l’analyse et de qualifier les priorités.</p>
     <?php else: ?>
-      <p>J’ai bien reçu vos réponses si vous venez de soumettre le formulaire. Je reviens vers vous rapidement pour vous proposer le format d’accompagnement le plus adapté à votre contexte.</p>
+      <p>J’ai bien reçu vos réponses si vous venez de soumettre le formulaire. Je reviens vers vous rapidement pour vous proposer le format d’accompagnement le plus adapté.</p>
     <?php endif; ?>
-    <div class="hero-actions offer-actions">
-      <a class="btn btn-primary" href="<?= e($calendlyCta) ?>">Planifier directement un échange</a>
-    </div>
+    <div class="hero-actions offer-actions"><a class="btn btn-primary" href="<?= e($calendlyCta) ?>">Échanger sur mes résultats</a></div>
   </div>
 </section>
 
@@ -46,25 +36,43 @@ require __DIR__.'/../includes/header.php';
   <div class="container">
     <div class="section-heading">
       <div class="eyebrow">Restitution immédiate</div>
-      <h2><?= e($result['prenom'] ? 'Première lecture pour ' . $result['prenom'] : 'Première lecture de votre diagnostic') ?></h2>
-      <p>Un retour personnalisé sera fait après analyse de vos réponses. Les scores ci-dessous donnent une lecture synthétique, volontairement simple.</p>
+      <h2><?= e($result['niveau_transformation']) ?></h2>
+      <p>Cette évaluation en ligne ne remplace pas le Diagnostic Transformation 360° complet : entretiens, analyse approfondie, revue des processus et feuille de route opérationnelle.</p>
     </div>
 
-    <div class="result-score-grid">
-      <article class="premium-box result-score-card"><span><?= (int)$result['score_maturite_ia'] ?>/100</span><strong><?= e($result['niveau_maturite']) ?></strong><p>Maturité IA</p></article>
-      <article class="premium-box result-score-card"><span><?= (int)$result['score_gouvernance_risque'] ?>/100</span><strong><?= e($result['niveau_risque']) ?></strong><p>Gouvernance / risque</p></article>
-      <article class="premium-box result-score-card"><span><?= (int)$result['score_opportunite_business'] ?>/100</span><strong><?= e($result['niveau_opportunite']) ?></strong><p>Opportunité business</p></article>
+    <div class="result-score-grid result-score-grid-wide">
+      <article class="premium-box result-score-card result-score-main"><span><?= (int)$result['score_transformation_global'] ?>/100</span><strong><?= e($result['niveau_transformation']) ?></strong><p>Score global de transformation</p></article>
+      <article class="premium-box result-score-card"><span><?= (int)$result['score_risque'] ?>/100</span><strong><?= e($result['niveau_risque']) ?></strong><p>Niveau de risque</p></article>
+      <article class="premium-box result-score-card"><span><?= (int)$result['score_creation_valeur'] ?>/100</span><strong><?= e($result['niveau_creation_valeur']) ?></strong><p>Création de valeur</p></article>
       <article class="premium-box result-score-card"><span><?= (int)$result['score_urgence'] ?>/100</span><strong><?= e($result['niveau_urgence']) ?></strong><p>Urgence estimée</p></article>
     </div>
 
-    <div class="premium-box result-recommendation">
+    <div class="premium-box result-recommendation result-recommendation-stacked">
       <div>
-        <div class="eyebrow">Offre recommandée</div>
-        <h2><?= e($result['offre_recommandee']) ?></h2>
+        <div class="eyebrow">Recommandation principale</div>
+        <h2><?= e($result['recommandation_principale']) ?></h2>
         <p><?= e($result['explication_recommandation']) ?></p>
-        <p>Vos réponses ont aussi été enregistrées dans le CRM afin de préparer un retour personnalisé et concret.</p>
+        <?php if(!empty($result['priorite_principale'])): ?><p><strong>Priorité principale :</strong> <?= e($result['priorite_principale']) ?></p><?php endif; ?>
       </div>
-      <a class="btn btn-primary" href="<?= e($calendlyCta) ?>">Planifier un échange</a>
+      <div class="result-actions"><a class="btn btn-primary" href="<?= e($calendlyCta) ?>">Échanger sur mes résultats</a><a class="btn btn-outline" href="/diagnostic-adoption-ia-transformation/">Découvrir le Diagnostic Transformation 360°</a></div>
+    </div>
+
+    <div class="result-detail-grid">
+      <div class="premium-box result-panel">
+        <h3>Scores par dimension</h3>
+        <?php foreach($dimensions as $key=>$dimension): $scoreKey='score_'.$key; $levelKey='niveau_'.$key; ?>
+          <div class="score-bar-row"><div><strong><?= e($dimension['label']) ?></strong><span><?= e($result[$levelKey] ?? '') ?></span></div><meter min="0" max="100" value="<?= (int)($result[$scoreKey] ?? 0) ?>"></meter><b><?= (int)($result[$scoreKey] ?? 0) ?>/100</b></div>
+        <?php endforeach; ?>
+      </div>
+      <div class="premium-box result-panel">
+        <h3>Constats principaux</h3>
+        <ul><?php foreach((array)$result['constats'] as $constat): ?><li><?= e($constat) ?></li><?php endforeach; ?></ul>
+        <?php if(!empty($result['recommandations_secondaires'])): ?><h3>Compléments possibles</h3><ul><?php foreach((array)$result['recommandations_secondaires'] as $item): ?><li><?= e($item) ?></li><?php endforeach; ?></ul><?php endif; ?>
+      </div>
+      <div class="premium-box result-panel full-result-panel">
+        <h3>Trois prochaines étapes conseillées</h3>
+        <ol><?php foreach((array)$result['prochaines_etapes'] as $step): ?><li><?= e($step) ?></li><?php endforeach; ?></ol>
+      </div>
     </div>
   </div>
 </section>

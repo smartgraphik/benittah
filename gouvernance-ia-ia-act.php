@@ -9,7 +9,7 @@ if (current_path() === '/gouvernance-ia-ia-act.php') {
 
 $meta=page_meta('governance');
 $canonical=absolute_url('/gouvernance-ia-ia-act/');
-$diagnosticUrl='/diagnostic-adoption-ia-transformation/';
+$diagnosticUrl='/evaluer-mon-besoin-ia/';
 $ctaUrl='/contact/#calendly-widget';
 
 $issues=array(
@@ -67,7 +67,7 @@ require __DIR__.'/includes/header.php';
     <p>L’adoption de l’IA ne se limite pas au choix des outils. Elle nécessite un cadre clair : usages autorisés, risques, données, responsabilités, sensibilisation des équipes et gouvernance opérationnelle.</p>
     <div class="hero-actions offer-actions">
       <a class="btn btn-primary" href="<?= e($ctaUrl) ?>">Structurer votre gouvernance IA</a>
-      <a class="btn btn-outline" href="<?= e($diagnosticUrl) ?>">Voir le diagnostic IA</a>
+      <a class="btn btn-outline" href="<?= e($diagnosticUrl) ?>">Faire mon diagnostic 360°</a>
     </div>
   </div>
 </section>

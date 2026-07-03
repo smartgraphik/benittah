@@ -41,7 +41,7 @@ require __DIR__.'/includes/header.php';
     <p><?= e($s['excerpt']) ?></p>
     <div class="hero-actions offer-actions">
       <a class="btn btn-primary" href="/contact/">Planifier un rendez-vous</a>
-      <a class="btn btn-outline" href="/diagnostic-adoption-ia-transformation/">Voir le diagnostic IA</a>
+      <a class="btn btn-outline" href="/diagnostic-adoption-ia-transformation/">Voir le Diagnostic Transformation 360°</a>
     </div>
   </div>
 </section>
@@ -52,7 +52,7 @@ require __DIR__.'/includes/header.php';
       <h2 style="font-size:30px">Formats</h2>
       <ul class="bullets"><?php foreach(($s['formats']??[]) as $f): ?><li><?= e($f) ?></li><?php endforeach; ?></ul>
       <a class="btn btn-primary" href="/contact/">Prendre rendez-vous</a>
-      <a class="link-orange service-side-link" href="/diagnostic-adoption-ia-transformation/">Commencer par un diagnostic IA →</a>
+      <a class="link-orange service-side-link" href="/diagnostic-adoption-ia-transformation/">Commencer par un diagnostic 360° →</a>
     </aside>
     <div class="service-main premium-box">
       <h2>Pourquoi cet accompagnement</h2>
@@ -66,7 +66,7 @@ require __DIR__.'/includes/header.php';
       <div class="service-diagnostic-link">
         <div>
           <strong>Vous ne savez pas encore quel levier prioriser ?</strong>
-          <span>Le Diagnostic Adoption IA & Transformation permet de clarifier les irritants, les usages IA possibles, les risques et la feuille de route 30 / 60 / 90 jours.</span>
+          <span>Le Diagnostic Transformation 360° permet de clarifier les irritants, les usages IA possibles, les risques et la feuille de route 30 / 60 / 90 jours.</span>
         </div>
         <a class="btn btn-outline" href="/diagnostic-adoption-ia-transformation/">Découvrir le diagnostic</a>
       </div>

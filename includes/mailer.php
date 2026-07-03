@@ -53,54 +53,49 @@ function send_lead_notification($leadId, $lead) {
   $prenom = $lead['prenom'] ?? '';
   $nom = $lead['nom'] ?? '';
   $fullName = trim($prenom . ' ' . $nom);
-  if ($fullName === '') { $fullName = $nom; }
   $entreprise = $lead['entreprise'] ?? '';
-  $offre = $lead['offre_recommandee'] ?? ($lead['source_offre'] ?? 'Pré-diagnostic IA');
-  $subject = 'Nouveau diagnostic IA — ' . $offre . ' — ' . ($fullName ?: 'Prospect');
+  $recommendation = $lead['recommandation_principale'] ?? ($lead['offre_recommandee'] ?? 'Diagnostic Transformation 360°');
+  $subject = 'Nouveau Diagnostic Transformation 360° — ' . $recommendation . ' — ' . ($fullName ?: 'Prospect');
   $adminLink = app_url('/admin/leads/view.php?id=' . (int)$leadId);
 
-  $raw = array();
-  if (!empty($lead['raw_answers_json'])) {
-    $decoded = json_decode($lead['raw_answers_json'], true);
-    if (is_array($decoded)) { $raw = $decoded; }
-  }
-  $objectifs = array();
-  if (!empty($raw['objectifs_business']) && is_array($raw['objectifs_business'])) {
-    $objectifs = $raw['objectifs_business'];
-  } elseif (!empty($lead['besoin_principal'])) {
-    $objectifs = array($lead['besoin_principal']);
+  $secondaries = array();
+  if (!empty($lead['recommandations_secondaires_json'])) {
+    $decoded = json_decode($lead['recommandations_secondaires_json'], true);
+    if (is_array($decoded)) { $secondaries = $decoded; }
+  } elseif (!empty($lead['recommandations_secondaires']) && is_array($lead['recommandations_secondaires'])) {
+    $secondaries = $lead['recommandations_secondaires'];
   }
 
   $lines = array(
-    'Nouveau diagnostic IA qualifié',
+    'Nouveau Diagnostic Transformation 360°',
     'Date : ' . date('Y-m-d H:i:s'),
     '',
     'Identité',
     'Prénom : ' . $prenom,
     'Nom : ' . $nom,
     'Entreprise : ' . $entreprise,
+    'Fonction : ' . ($lead['role_contact'] ?? ''),
     'Email : ' . ($lead['email'] ?? ''),
     'Téléphone : ' . ($lead['telephone'] ?? ''),
-    'Fonction : ' . ($lead['role_contact'] ?? ''),
     'Taille : ' . ($lead['taille_entreprise'] ?? ''),
     'Secteur : ' . ($lead['secteur_activite'] ?? ''),
     '',
-    'Qualification',
-    'Offre recommandée : ' . $offre,
-    'Maturité IA : ' . ($lead['score_maturite_ia'] ?? '') . '/100 — ' . ($lead['niveau_maturite'] ?? ''),
-    'Gouvernance / risque : ' . ($lead['score_gouvernance_risque'] ?? '') . '/100 — ' . ($lead['niveau_risque'] ?? ''),
-    'Opportunité business : ' . ($lead['score_opportunite_business'] ?? '') . '/100 — ' . ($lead['niveau_opportunite'] ?? ''),
+    'Qualification 360°',
+    'Score global : ' . ($lead['score_transformation_global'] ?? '') . '/100 — ' . ($lead['niveau_transformation'] ?? ''),
+    'Risque : ' . ($lead['score_risque'] ?? '') . '/100 — ' . ($lead['niveau_risque'] ?? ''),
+    'Création de valeur : ' . ($lead['score_creation_valeur'] ?? '') . '/100 — ' . ($lead['niveau_creation_valeur'] ?? ''),
     'Urgence : ' . ($lead['score_urgence'] ?? '') . '/100 — ' . ($lead['niveau_urgence'] ?? ''),
+    'Priorité principale : ' . ($lead['priorite_principale'] ?? ''),
+    'Recommandation principale : ' . $recommendation,
+    'Recommandations complémentaires : ' . ($secondaries ? implode(', ', $secondaries) : 'Aucune'),
     '',
-    'Objectifs déclarés : ' . ($objectifs ? implode(', ', $objectifs) : 'Non renseigné'),
+    'Principal enjeu exprimé :',
+    $lead['message'] ?? '',
     '',
     'Résumé de recommandation :',
     $lead['explication_recommandation'] ?? '',
     '',
-    'Message prospect :',
-    $lead['message'] ?? '',
-    '',
-    'Fiche lead : ' . $adminLink,
+    'Fiche prospect : ' . $adminLink,
   );
   $body = implode("\n", $lines);
 
@@ -108,8 +103,43 @@ function send_lead_notification($leadId, $lead) {
   if ($phpmailerResult === true) { return true; }
 
   $sent = send_plain_mail($to, $subject, $body);
-  if (!$sent) {
-    mail_log('mail() failed for lead #' . (int)$leadId . ' to ' . $to);
-  }
+  if (!$sent) { mail_log('mail() failed for lead #' . (int)$leadId . ' to ' . $to); }
+  return $sent;
+}
+
+function send_prospect_assessment_confirmation($leadId, $lead) {
+  $to = $lead['email'] ?? '';
+  if ($to === '' || !filter_var($to, FILTER_VALIDATE_EMAIL)) { return false; }
+
+  $prenom = $lead['prenom'] ?? '';
+  $subject = 'Votre Diagnostic Transformation 360°';
+  $calendlyUrl = app_url('/contact/#calendly-widget');
+  $recommendation = $lead['recommandation_principale'] ?? 'Diagnostic Transformation 360°';
+
+  $lines = array(
+    'Bonjour' . ($prenom ? ' ' . $prenom : '') . ',',
+    '',
+    'Merci d’avoir complété le Diagnostic Transformation 360°.',
+    '',
+    'Votre première lecture en ligne :',
+    'Niveau global : ' . (($lead['niveau_transformation'] ?? '') ?: 'à approfondir'),
+    'Score global : ' . (($lead['score_transformation_global'] ?? '') !== '' ? ($lead['score_transformation_global'] . '/100') : 'à approfondir'),
+    'Priorité principale : ' . (($lead['priorite_principale'] ?? '') ?: 'à préciser ensemble'),
+    'Recommandation : ' . $recommendation,
+    '',
+    'Ce résultat constitue une première photographie. Un échange permettra d’approfondir le contexte, de qualifier les priorités et d’identifier le meilleur format d’accompagnement.',
+    '',
+    'Pour planifier un rendez-vous :',
+    $calendlyUrl,
+    '',
+    'À bientôt,',
+    'Cédrick Benittah',
+  );
+
+  $phpmailerResult = send_with_phpmailer_if_available($to, $subject, implode("\n", $lines));
+  if ($phpmailerResult === true) { return true; }
+
+  $sent = send_plain_mail($to, $subject, implode("\n", $lines));
+  if (!$sent) { mail_log('Prospect confirmation failed for lead #' . (int)$leadId); }
   return $sent;
 }

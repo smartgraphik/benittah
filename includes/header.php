@@ -29,7 +29,7 @@
     </a>
     <nav class="main-nav" aria-label="Navigation principale">
       <a class="<?=active('home',$current)?>" href="/">Accueil</a>
-      <a class="<?=active('diagnostic',$current)?>" href="/diagnostic-adoption-ia-transformation/">Diagnostic IA</a>
+      <a class="<?=active('diagnostic',$current)?>" href="/evaluer-mon-besoin-ia/">Votre diagnostic 360°</a>
       <a class="<?=active('services',$current)?>" href="/accompagnements/">Offres</a>
       <a class="<?=active('about',$current)?>" href="/cedrick-benittah/">Cédrick Benittah</a>
       <a class="<?=active('resources',$current)?>" href="/articles/">Articles</a>

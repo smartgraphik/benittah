@@ -12,7 +12,7 @@ try {
   foreach ($rows as $row) {
     if (isset($stats[$row['statut']])) { $stats[$row['statut']] = (int)$row['total']; }
   }
-  $latest = $pdo->query("SELECT id, created_at, prenom, nom, entreprise, source_offre, offre_recommandee, statut FROM leads_diagnostic_ia ORDER BY created_at DESC LIMIT 8")->fetchAll();
+  $latest = $pdo->query("SELECT id, created_at, prenom, nom, entreprise, source_offre, offre_recommandee, recommandation_principale, score_transformation_global, niveau_transformation, statut FROM leads_diagnostic_ia ORDER BY created_at DESC LIMIT 8")->fetchAll();
 } catch (Throwable $e) {
   $dbError = 'Base de données indisponible. Vérifiez config.local.php et la migration SQL.';
   app_log('Admin dashboard failed: ' . $e->getMessage());
@@ -21,7 +21,7 @@ try {
 admin_header('Admin — Tableau de bord','dashboard');
 ?>
 <div class="admin-top">
-  <div><h1>Tableau de bord</h1><p>CRM pré-diagnostic IA, articles, SEO et sitemap.</p></div>
+  <div><h1>Tableau de bord</h1><p>CRM Diagnostic Transformation 360°, articles, SEO et sitemap.</p></div>
   <a class="btn btn-primary" href="/admin/leads/">Voir les leads</a>
 </div>
 <?php if($dbError): ?><div class="notice error"><?= e($dbError) ?></div><?php endif; ?>
@@ -34,19 +34,20 @@ admin_header('Admin — Tableau de bord','dashboard');
   <div class="admin-panel-head"><h2>Derniers leads reçus</h2><a class="mini-btn" href="/admin/leads/?export=csv">Export CSV</a></div>
   <div class="admin-table-wrap">
     <table class="admin-table">
-      <thead><tr><th>Date</th><th>Contact</th><th>Entreprise</th><th>Offre recommandée</th><th>Statut</th><th></th></tr></thead>
+      <thead><tr><th>Date</th><th>Contact</th><th>Entreprise</th><th>Score global</th><th>Recommandation</th><th>Statut</th><th></th></tr></thead>
       <tbody>
       <?php foreach($latest as $lead): ?>
         <tr>
           <td><?= e($lead['created_at']) ?></td>
           <td><?= e(trim(($lead['prenom'] ?? '') . ' ' . ($lead['nom'] ?? ''))) ?></td>
           <td><?= e($lead['entreprise'] ?? '') ?></td>
-          <td><?= e($lead['offre_recommandee'] ?? ($lead['source_offre'] ?? '')) ?></td>
+          <td><?= e(isset($lead['score_transformation_global']) ? $lead['score_transformation_global'].'/100' : '') ?><br><span><?= e($lead['niveau_transformation'] ?? '') ?></span></td>
+          <td><?= e($lead['recommandation_principale'] ?? ($lead['offre_recommandee'] ?? ($lead['source_offre'] ?? ''))) ?></td>
           <td><?= e($lead['statut'] ?? '') ?></td>
           <td><a class="mini-btn" href="/admin/leads/view.php?id=<?= (int)$lead['id'] ?>">Voir</a></td>
         </tr>
       <?php endforeach; ?>
-      <?php if(!$latest): ?><tr><td colspan="6">Aucun lead pour le moment.</td></tr><?php endif; ?>
+      <?php if(!$latest): ?><tr><td colspan="7">Aucun lead pour le moment.</td></tr><?php endif; ?>
       </tbody>
     </table>
   </div>

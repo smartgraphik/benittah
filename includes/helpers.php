@@ -88,7 +88,7 @@ function client_user_agent() {
 function offer_label_from_code($code) {
   $map = array(
     'flash' => 'Diagnostic Flash IA',
-    'adoption' => 'Diagnostic Adoption IA',
+    'adoption' => 'Diagnostic Transformation 360°',
     '90jours' => 'Accompagnement 90 jours',
   );
   return $map[$code] ?? null;
@@ -97,6 +97,7 @@ function offer_label_from_code($code) {
 function offer_code_from_label($label) {
   $map = array(
     'Diagnostic Flash IA' => 'flash',
+    'Diagnostic Transformation 360°' => 'adoption',
     'Diagnostic Adoption IA' => 'adoption',
     'Accompagnement 90 jours' => '90jours',
   );

@@ -42,3 +42,4 @@
 .lead-detail-grid .full-detail span{display:block}
 @media(max-width:900px){.lead-score-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.lead-score-grid{grid-template-columns:1fr}}
+.admin-badge-soft{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;background:#fff2e9;border:1px solid rgba(255,90,20,.22);color:#7d2b08;font-size:12px;font-weight:900}.admin-badge-soft.risk{background:#fff7e8;color:#704107}.admin-badge-soft.status{background:#f7f2ec;color:#3a3029}.lead-score-grid.six{grid-template-columns:repeat(3,minmax(0,1fr))}.lead-score-card{border-radius:14px}.lead-offer-box p+b,.lead-offer-box p b{color:#2b211b}@media(max-width:1000px){.lead-score-grid.six{grid-template-columns:1fr 1fr}}@media(max-width:760px){.lead-score-grid.six{grid-template-columns:1fr}}

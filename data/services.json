@@ -1,9 +1,9 @@
 [
     {
         "slug":  "diagnostic-adoption-ia-transformation",
-        "title":  "Diagnostic Adoption IA \u0026 Transformation",
+        "title":  "Diagnostic Transformation 360°",
         "kicker":  "Cadrage",
-        "excerpt":  "Clarifier les cas d’usage IA, les risques, les priorités et la feuille de route 30 / 60 / 90 jours.",
+        "excerpt":  "Clarifier les priorités de transformation, les cas d’usage IA, les risques, l’adoption et la feuille de route 30 / 60 / 90 jours.",
         "icon":  "01",
         "priority":  10,
         "image":  "/assets/img/architecture-hero.webp",
@@ -28,8 +28,8 @@
                         "Atelier de priorisation",
                         "Restitution dirigeant ou comité projet"
                     ],
-        "seo_title":  "Diagnostic Adoption IA \u0026 Transformation — Cédrick Benittah",
-        "seo_description":  "Clarifiez vos cas d’usage IA, sécurisez les risques et repartez avec une roadmap opérationnelle 30 / 60 / 90 jours."
+        "seo_title":  "Diagnostic Transformation 360° — Cédrick Benittah",
+        "seo_description":  "Évaluez votre maturité de transformation : stratégie, organisation, IA, gouvernance, adoption et feuille de route 30 / 60 / 90 jours."
     },
     {
         "slug":  "gouvernance-ia-ia-act",
@@ -93,6 +93,6 @@
                         "Rituels de feedback et d’adoption"
                     ],
         "seo_title":  "Accompagnement Adoption IA — Cédrick Benittah",
-        "seo_description":  "Passez du diagnostic IA à l’expérimentation terrain avec un accompagnement des cas d’usage, des managers et des équipes."
+        "seo_description":  "Passez du diagnostic 360° à l’expérimentation terrain avec un accompagnement des cas d’usage, des managers et des équipes."
     }
 ]

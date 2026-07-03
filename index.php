@@ -3,14 +3,14 @@ $current='home';
 require __DIR__.'/includes/header.php';
 $cfg=site();
 $arts=array_slice(articles(),0,3);
-$diagnosticUrl='/diagnostic-adoption-ia-transformation/';
+$diagnosticUrl='/evaluer-mon-besoin-ia/';
 $governanceUrl='/gouvernance-ia-ia-act/';
 $homeOffers=[
   [
     'icon'=>'01',
     'kicker'=>'Cadrage',
-    'title'=>'Diagnostic Adoption IA & Transformation',
-    'excerpt'=>'Clarifier les cas d’usage IA, les risques, les priorités et la feuille de route 30 / 60 / 90 jours.',
+    'title'=>'Diagnostic Transformation 360°',
+    'excerpt'=>'Évaluer stratégie, organisation, IA, gouvernance, adoption, automatisation et feuille de route 30 / 60 / 90 jours.',
     'url'=>$diagnosticUrl
   ],
   [
@@ -156,17 +156,17 @@ if (!$clientRefs) { $clientRefs=$clientRefsFallback; }
   <div class="container diagnostic-feature">
     <div>
       <div class="eyebrow">Offre phare</div>
-      <h2>Diagnostic Adoption IA & Transformation</h2>
-      <p>Un format court pour identifier les cas d’usage IA pertinents, clarifier les risques humains, métiers et réglementaires, puis construire une feuille de route utile 30 / 60 / 90 jours.</p>
+      <h2>Diagnostic Transformation 360°</h2>
+      <p>Un format court pour objectiver votre maturité de transformation : vision, organisation, IA, gouvernance, adoption, automatisation et capacité d’exécution.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="<?= e($diagnosticUrl) ?>">Demander un diagnostic IA</a>
+        <a class="btn btn-primary" href="<?= e($diagnosticUrl) ?>">Faire mon diagnostic 360°</a>
         <a class="btn btn-outline" href="<?= e($governanceUrl) ?>">Structurer votre gouvernance IA</a>
       </div>
     </div>
     <div class="diagnostic-proof-grid" aria-label="Axes du diagnostic">
-      <div><span>01</span><strong>Cas d’usage</strong><p>Prioriser les usages IA à vraie valeur métier.</p></div>
-      <div><span>02</span><strong>Risques</strong><p>Clarifier données, conformité, adoption et vigilance managériale.</p></div>
-      <div><span>03</span><strong>Équipes</strong><p>Créer les conditions d’appropriation sur le terrain.</p></div>
+      <div><span>01</span><strong>Stratégie</strong><p>Clarifier vision, priorités et arbitrages de transformation.</p></div>
+      <div><span>02</span><strong>Organisation</strong><p>Lire les freins d’exécution, de décision et de coordination.</p></div>
+      <div><span>03</span><strong>IA & risques</strong><p>Évaluer usages, gouvernance, données et adoption terrain.</p></div>
       <div><span>04</span><strong>Roadmap</strong><p>Décider quoi lancer à 30, 60 et 90 jours.</p></div>
     </div>
   </div>
@@ -286,7 +286,7 @@ if (!$clientRefs) { $clientRefs=$clientRefsFallback; }
       <div class="eyebrow">Premier échange</div>
       <h2>Vous voulez passer de l’intention IA à une feuille de route utile et maîtrisée ?</h2>
     </div>
-    <a class="btn btn-primary" href="<?= e($diagnosticUrl) ?>">Demander un diagnostic IA</a>
+    <a class="btn btn-primary" href="<?= e($diagnosticUrl) ?>">Faire mon diagnostic 360°</a>
   </div>
 </section>
 <!-- Elfsight WhatsApp Chat | Cedrick WhatsApp Chat -->

@@ -11,15 +11,15 @@ $frontOffers=[
   [
     'icon'=>'01',
     'kicker'=>'Cadrage',
-    'title'=>'Diagnostic Adoption IA & Transformation',
-    'benefit'=>'Clarifier les cas d’usage IA, les risques, les priorités et la feuille de route 30 / 60 / 90 jours.',
+    'title'=>'Diagnostic Transformation 360°',
+    'benefit'=>'Clarifier les priorités de transformation, les cas d’usage IA, les risques, l’adoption et la feuille de route 30 / 60 / 90 jours.',
     'points'=>[
       'Entretiens ciblés avec les parties prenantes.',
       'Cartographie des opportunités, risques et irritants.',
       'Matrice valeur / faisabilité / risque.',
       'Roadmap 30 / 60 / 90 jours exploitable.'
     ],
-    'cta'=>'Demander un diagnostic IA',
+    'cta'=>'Faire mon diagnostic 360°',
     'url'=>'/diagnostic-adoption-ia-transformation/'
   ],
   [
@@ -57,9 +57,9 @@ require __DIR__.'/includes/header.php';
   <div class="container">
     <div class="eyebrow">Offres</div>
     <h1>Des interventions pour cadrer, gouverner et adopter l’IA.</h1>
-    <p>Une offre resserrée autour de l’adoption IA, de la transformation et de la gouvernance responsable, sans disperser le message en catalogue d’expertises.</p>
+    <p>Une offre resserrée autour du Diagnostic Transformation 360°, de la gouvernance responsable et de l’adoption terrain, sans disperser le message en catalogue d’expertises.</p>
     <div class="hero-actions offer-actions">
-      <a class="btn btn-primary" href="/diagnostic-adoption-ia-transformation/">Demander un diagnostic IA</a>
+      <a class="btn btn-primary" href="/evaluer-mon-besoin-ia/">Faire mon diagnostic 360°</a>
       <a class="btn btn-outline" href="/gouvernance-ia-ia-act/">Gouvernance IA & IA Act</a>
     </div>
   </div>
@@ -116,7 +116,7 @@ require __DIR__.'/includes/header.php';
       <div class="eyebrow">Premier cadrage</div>
       <h2>Vous voulez clarifier vos priorités IA sans multiplier les chantiers ?</h2>
     </div>
-    <a class="btn btn-primary" href="/diagnostic-adoption-ia-transformation/">Demander un diagnostic IA</a>
+    <a class="btn btn-primary" href="/evaluer-mon-besoin-ia/">Faire mon diagnostic 360°</a>
   </div>
 </section>
 <?php require __DIR__.'/includes/footer.php'; ?>
