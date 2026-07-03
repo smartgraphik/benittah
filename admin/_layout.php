@@ -2,9 +2,11 @@
 require_once __DIR__.'/../includes/functions.php';
 require_once __DIR__.'/auth.php';
 
-function admin_header($title, $active='dashboard') {
+function admin_header($title, $active='dashboard', $extraStyles = array(), $mainClass = '') {
   $cfg=site();
   $admin=current_admin();
+  if (is_string($extraStyles)) { $extraStyles = array($extraStyles); }
+  $mainClasses = trim('admin-main ' . $mainClass);
   ?>
 <!doctype html>
 <html lang="fr">
@@ -14,6 +16,9 @@ function admin_header($title, $active='dashboard') {
   <title><?= e($title) ?></title>
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/admin/assets/admin.css">
+  <?php foreach($extraStyles as $href): ?>
+  <link rel="stylesheet" href="<?= e($href) ?>">
+  <?php endforeach; ?>
   <script defer src="/assets/js/app.js"></script>
 </head>
 <body>
@@ -32,7 +37,7 @@ function admin_header($title, $active='dashboard') {
     </nav>
     <div class="admin-quote">V1 simple, robuste et maintenable.</div>
   </aside>
-  <main class="admin-main">
+  <main class="<?= e($mainClasses) ?>">
   <?php
 }
 
